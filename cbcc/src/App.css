@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+/* Baseline */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #706784;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li,a,button {
+  list-style: none;
+  text-decoration: none;
+  color: #706784;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header */
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+header nav img{
+  max-height: 60px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav ul li{
+  padding: 10px;
+  margin: 0 10px;
+}
+
+nav a{
+  font-weight: bold;
+}
+
+nav ul li:nth-child(3){
+  color: white;
+  background-color: #FECC50;
+}
+
+nav ul li:nth-child(3) a{
+  color: white;
+}
+
+.hero{
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.hero img{
+  max-height: 255px;
+}
+
+.headline{
+  font-size: larger;
+  max-width: 484px;
+}
+
+
+/* Events */
+
+.events{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.events h1{
+  font-size: 50px;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.card-event{
+  background-color: #C4C4C4;
+  text-align: center;
+  width: 393px;
+  height: 300px;
+  padding: 20px;
 }
