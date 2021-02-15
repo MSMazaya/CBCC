@@ -1,5 +1,4 @@
 /* Baseline */
-
 *{
   margin: 0;
   padding: 0;
@@ -12,6 +11,7 @@ li,a,button {
   text-decoration: none;
   color: #706784;
 }
+
 
 /* Header */
 
@@ -51,10 +51,19 @@ nav a{
 nav ul li:nth-child(3){
   color: white;
   background-color: #FECC50;
+  box-shadow: 1px 1px 1px grey;
 }
 
 nav ul li:nth-child(3) a{
   color: white;
+}
+
+nav ul li:hover a{
+  color:#FECC50;
+}
+
+nav ul li:nth-child(3):hover a{
+  color:#706784;
 }
 
 .hero{
