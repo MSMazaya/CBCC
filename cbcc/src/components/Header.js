@@ -55,8 +55,10 @@ const Header = () => {
             className="hero">
                 <img src="hero.png" alt="hero"/>
                 <div className="headline">
-                    <h1>Sub-Headline</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia maxime debitis quod exercitationem. Dolores eum, dolorem culpa doloremque modi, id totam voluptate quae ducimus voluptatum ratione temporibus, itaque magnam a.</p>
+                    <ul className="headline-items">
+                        <li><a className="tentang" href="">About Us</a></li>
+                        <li><a className="daftar" href="">Register</a></li>
+                </ul>
                 </div>
             </motion.div>
         </header>

@@ -97,6 +97,34 @@ nav ul li:nth-child(3):hover a{
   max-width: 484px;
 }
 
+.tentang {
+  position: absolute;
+  left: 500px;
+  top: 485px;
+  font-family: Kollektif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 27px;
+  background: #FECC50;
+  padding:13px 12px 12px 11px;
+  border-radius: 11px;
+}
+
+.daftar {
+  position: absolute;
+  left: 650px;
+  top: 485px;
+  font-family: Kollektif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 27px;
+  background: #FECC50;
+  padding:13px 15px 12px 11px;
+  border-radius: 11px;
+}
+
 /* Subheader */
 .subheader{
   height: 100vh;
@@ -118,16 +146,30 @@ nav ul li:nth-child(3):hover a{
 }
 
 .subheader-item h1{
-  line-height: 40px;
+  font-size: 48px;
+  line-height: 45px;
   color: #FECC50;
-  font-weight: 400;
+  font-weight: 550;
 }
 
-.subheader p{
-  padding: 20px;
-  font-size: 20px;
-  text-align: justify;
+.subheader-item2{
+  width: 40vw;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;  
 }
+
+.subheader-item2 h1{
+  line-height: 85px;
+  color: #FECC50;
+  font-weight: 400;
+  font-size: 96px;
+}
+
+
 
 /* Events */
 

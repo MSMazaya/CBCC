@@ -36,16 +36,16 @@ const Subheader = () => {
                     initial="hidden"
                     transition={{duration:0.5}}
                     variants={rightVariants}
-                >Collegacy Bussines Case Competition</motion.h1>   
+                >Collegacy Business Case Competition</motion.h1>   
             </div>
-            <div className="subheader-item">
+            <div className="subheader-item2">
                 <motion.h1
                     ref={ref}
                     animate={controls}
                     initial="hidden"
                     transition={{duration:0.75}}
                     variants={leftVariants}
-                >Collegacy Bussines Case Competition</motion.h1>   
+                >Our Goal</motion.h1>   
                 <motion.p
                     ref={ref}
                     animate={controls}
