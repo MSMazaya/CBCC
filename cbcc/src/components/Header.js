@@ -1,11 +1,25 @@
 import React from 'react'
+import {useState} from 'react'
 import {motion} from 'framer-motion'
 const Header = () => {
+    const [Navbar, setNavbar] = useState(false)
+
+    const changeBackground = () => {
+        if(window.scrollY >= 12){
+            setNavbar(true)
+        }
+        else{
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll',changeBackground)
+
     return (
         <header>
-            <motion.nav
+            <motion.nav className={Navbar ? "active" : "" }
                 initial={{
-                    y:-1000
+                    y:-1000,
                 }}
                 animate={{
                     y:0

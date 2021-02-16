@@ -6,6 +6,10 @@
   color: #706784;
 }
 
+.App{
+  background-color: #E5E5E5;
+}
+
 li,a,button {
   list-style: none;
   text-decoration: none;
@@ -22,11 +26,20 @@ header{
 }
 
 nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
+  transition: background-color 0.5s;
+}
+
+nav.active{
+  background-color: white;
+  border-bottom: solid 4px black;
 }
 
 header nav img{
@@ -67,7 +80,7 @@ nav ul li:nth-child(3):hover a{
 }
 
 .hero{
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,10 +97,42 @@ nav ul li:nth-child(3):hover a{
   max-width: 484px;
 }
 
+/* Subheader */
+.subheader{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;  
+}
+
+.subheader-item{
+  width: 40vw;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;  
+}
+
+.subheader-item h1{
+  line-height: 40px;
+  color: #FECC50;
+  font-weight: 400;
+}
+
+.subheader p{
+  padding: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
 
 /* Events */
 
 .events{
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +152,7 @@ nav ul li:nth-child(3):hover a{
 }
 
 .card-event{
-  background-color: #C4C4C4;
+  background-color: #706784;
   text-align: center;
   width: 393px;
   height: 300px;
