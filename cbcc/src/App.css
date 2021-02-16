@@ -65,6 +65,7 @@ nav ul li:nth-child(3){
   color: white;
   background-color: #FECC50;
   box-shadow: 1px 1px 1px grey;
+  border-radius: 11px;
 }
 
 nav ul li:nth-child(3) a{
@@ -100,7 +101,7 @@ nav ul li:nth-child(3):hover a{
 .tentang {
   position: absolute;
   left: 500px;
-  top: 485px;
+  top: 435px;
   font-family: Kollektif;
   font-style: normal;
   font-weight: normal;
@@ -109,12 +110,16 @@ nav ul li:nth-child(3):hover a{
   background: #FECC50;
   padding:13px 12px 12px 11px;
   border-radius: 11px;
+  box-shadow: 1px 1px 1px grey;
+}
+.tentang:hover{
+  transform: scale(1.1);
 }
 
 .daftar {
   position: absolute;
   left: 650px;
-  top: 485px;
+  top: 435px;
   font-family: Kollektif;
   font-style: normal;
   font-weight: normal;
@@ -123,6 +128,11 @@ nav ul li:nth-child(3):hover a{
   background: #FECC50;
   padding:13px 15px 12px 11px;
   border-radius: 11px;
+  box-shadow: 1px 1px 1px grey;
+}
+
+.daftar:hover {
+  transform: scale(1.1);
 }
 
 /* Subheader */
