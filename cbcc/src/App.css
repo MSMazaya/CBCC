@@ -8,6 +8,7 @@
 
 .App{
   background-color: #E5E5E5;
+  overflow: hidden;
 }
 
 li,a,button {
@@ -248,7 +249,25 @@ nav ul li:nth-child(3):hover a{
   gap: 10px;
   align-items: center;
   justify-content: center;
+  gap: 42px;
 }
+
+.question{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 5px;
+  width: 80vw;
+  height: 97px;
+  background-color: #FF6D69;
+}
+.question h1{
+  color: #142A3D;
+  font-weight: 600;
+}
+
 
 /* Sponsor */
 .sponsor{
