@@ -29,6 +29,7 @@ const Events = () => {
             animate={controls}
             transtion={{duration:2}}
             variants={eventVariants}
+            className="sub-title"
             >Events</motion.h1>
             <motion.div 
             ref={ref}
