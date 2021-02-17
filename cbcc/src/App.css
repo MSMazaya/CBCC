@@ -84,7 +84,7 @@ nav ul li:nth-child(3):hover a{
 .hero{
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
@@ -99,10 +99,16 @@ nav ul li:nth-child(3):hover a{
   max-width: 484px;
 }
 
+.headline ul{
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 .tentang {
-  position: absolute;
-  left: 590px;
-  top: 450px;
   font-family: Kollektif;
   color: #ffffff;
   font-size: 20px;
@@ -116,9 +122,6 @@ nav ul li:nth-child(3):hover a{
 }
 
 .daftar {
-  position: absolute;
-  left: 710px;
-  top: 450px;
   font-family: Kollektif;
   color: #ffffff;
   font-size: 20px;
