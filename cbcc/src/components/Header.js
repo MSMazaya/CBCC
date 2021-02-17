@@ -56,8 +56,22 @@ const Header = () => {
                 <img src="hero.png" alt="hero"/>
                 <div className="headline">
                     <ul className="headline-items">
-                        <li><a className="tentang" href="">About Us</a></li>
-                        <li><a className="daftar" href="">Register</a></li>
+                        <motion.li
+                            whileHover="hover"
+                            variants={{
+                                hover:{
+                                    scale:1.1,
+                                }
+                            }}
+                        ><a className="tentang" href="">About Us</a></motion.li>
+                        <motion.li
+                            whileHover="hover"
+                            variants={{
+                                hover:{
+                                    scale:1.1
+                                }
+                            }}
+                        ><a className="daftar" href="">Register</a></motion.li>
                 </ul>
                 </div>
             </motion.div>

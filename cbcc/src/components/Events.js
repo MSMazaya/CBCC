@@ -31,13 +31,13 @@ const Events = () => {
             variants={eventVariants}
             className="grid-container">
                 { Events.map((x) => {
-                    return <div           
+                    return <motion.div           
                         ref={ref}
                         initial='hidden'
                         animate={controls}
-                        transtion={{duration:2, delay:0.5}}
+                        transition={{duration:1, delay:x/2}}
                         variants={eventVariants}
-                    className="card-event">{x}</div>
+                    className="card-event"></motion.div>
                 })}
             </motion.div>
         </div>
