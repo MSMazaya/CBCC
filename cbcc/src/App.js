@@ -4,6 +4,8 @@ import Events from "./components/Events"
 import Timeline from "./components/Timeline"
 import Subheader from './components/Subheader'
 import Footer from "./components/Footer"
+import Faq from "./components/Faq"
+import Sponsor from "./components/Sponsor"
 
 function App() {
   return (
@@ -11,6 +13,9 @@ function App() {
       <Header/>
       <Subheader/>
       <Events/>
+      <Timeline/>
+      <Faq/>
+      <Sponsor/>
       <Footer/>
     </div>
   );

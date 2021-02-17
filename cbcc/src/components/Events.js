@@ -23,7 +23,13 @@ const Events = () => {
 
     return (
         <div className="events">
-            <h1>Events</h1>
+            <motion.h1
+            ref={ref}
+            initial='hidden'
+            animate={controls}
+            transtion={{duration:2}}
+            variants={eventVariants}
+            >Events</motion.h1>
             <motion.div 
             ref={ref}
             initial='hidden'
@@ -41,10 +47,10 @@ const Events = () => {
                         
                     className="card-event">
                         <motion.div
-                        initial={{opacity:0}}
-                        whileHover={{opacity:0.8}}
+                        initial={{opacity:0.7}}
+                        whileHover={{opacity:0.2}}
                         className="card-inside">
-                            <img src="contoh.jpg" alt=""/>
+                            <img src="contoh.jpg" alt="contoh"/>
                         </motion.div>
                     </motion.div>
                 })}
