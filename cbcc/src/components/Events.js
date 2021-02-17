@@ -9,6 +9,7 @@ const eventVariants = {
 
 const Events = () => {
     const [Events, setEvents] = useState([1,2,3])
+    const [visible, setVisible] = useState(false)
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
@@ -35,9 +36,17 @@ const Events = () => {
                         ref={ref}
                         initial='hidden'
                         animate={controls}
-                        transition={{duration:1, delay:x/2}}
+                        transition={{duration:0.5, delay:x/3}}
                         variants={eventVariants}
-                    className="card-event"></motion.div>
+                        
+                    className="card-event">
+                        <motion.div
+                        initial={{opacity:0}}
+                        whileHover={{opacity:0.8}}
+                        className="card-inside">
+                            <img src="contoh.jpg" alt=""/>
+                        </motion.div>
+                    </motion.div>
                 })}
             </motion.div>
         </div>
