@@ -23,16 +23,48 @@ li,a,button {
   font-weight: 500;
 }
 
+/* Utilities */
+/* Ini buat bikin shape2 background, nanti tinggal pake
+sama tambah class buat positioningnya
+ ps: bg-decoration harus ditambahin, dan decoration harus di wrap sama .cover
+*/
+
+.cover{
+  overflow: hidden;
+}
+
+.bg-decoration{
+  position: absolute;
+}
+
+.elips1{
+  height: 150px;
+  width: 150px;
+  background-color: #FECC50;
+  border-radius: 50%;
+}
+
+.poligon1{
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 100px solid #FF6D69;
+  transform: rotate(180deg);
+}
 
 /* Header */
 
 header{
+  background-image: linear-gradient(180deg, #FECC50 -80%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
 }
 
 nav{
+  background-color: #E5E5E5;
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -73,8 +105,8 @@ nav a{
 nav ul li:nth-child(3){
   color: white;
   background-color: #FECC50;
-  box-shadow: 1px 1px 1px grey;
-  border-radius: 11px;
+  /* box-shadow: 1px 1px 1px grey; */
+  /* border-radius: 11px; */
 }
 
 nav ul li:nth-child(3) a{
@@ -90,7 +122,8 @@ nav ul li:nth-child(3):hover a{
 }
 
 .hero{
-  height: 100vh;
+  margin-top: 40px;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +132,8 @@ nav ul li:nth-child(3):hover a{
 }
 
 .hero img{
-  max-height: 255px;
+  width: 586px;
+  height: 255px;
 }
 
 .headline{
@@ -143,6 +177,17 @@ nav ul li:nth-child(3):hover a{
   transform: scale(1.1);
 }
 
+
+
+.dekorasi1{
+  right: -70px;
+  top: 70px;
+}
+
+.dekorasi2{
+  top: 450px;
+  left:-70px;
+}
 /* Subheader */
 .subheader{
   height: 100vh;

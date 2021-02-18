@@ -75,6 +75,28 @@ const Header = () => {
                 </ul>
                 </div>
             </motion.div>
+            <div className="cover">
+                <motion.div
+                initial={{x:100}}
+                animate={{x:0}}
+                transition={{
+                    type: "spring",
+                    delay:2,
+                    damping:5,
+                }}
+                className="elips1 bg-decoration dekorasi1"></motion.div>
+            </div>
+            <div className="cover">
+                <motion.div
+                initial={{x:-100}}
+                animate={{x:0}}
+                transition={{
+                    type: "spring",
+                    delay:2,
+                    damping:5,
+                }}
+                className="poligon1 bg-decoration dekorasi2"></motion.div>
+            </div>
         </header>
         
     )
