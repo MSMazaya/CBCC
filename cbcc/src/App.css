@@ -355,18 +355,15 @@ nav ul li:nth-child(3):hover a{
   background-image: linear-gradient(129.84deg, #706784 13.07%, #FECC50 72.74%);
 }
 
-<<<<<<< Updated upstream
-=======
+.question h1{
+  color: #fff;
+  font-weight: 600;
+}
+
 .answer{
   width: 80vw;
   height: 277px;
   border: 9px solid #4A415F;
-}
-
->>>>>>> Stashed changes
-.question h1{
-  color: #fff;
-  font-weight: 600;
 }
 
 
