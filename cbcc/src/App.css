@@ -12,7 +12,7 @@
 }
 
 .App{
-  background-color: #E5E5E5;
+  background-color: #ffffff;
   overflow: hidden;
 }
 
@@ -69,7 +69,6 @@ header{
 }
 
 nav{
-  background-color: #E5E5E5;
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -83,6 +82,7 @@ nav{
 }
 
 nav.active{
+  background-image: linear-gradient(338.2deg, #FFD05B -25.97%, #FFFFFF 106.32%);
   background-color: white;
   box-shadow: 5px 5px 7px grey;
   border-bottom: solid 4px #4A415F;
@@ -110,8 +110,8 @@ nav a{
 nav ul li:nth-child(3){
   color: white;
   background-color: #FECC50;
-  /* box-shadow: 1px 1px 1px grey; */
-  /* border-radius: 11px; */
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 11px;
 }
 
 nav ul li:nth-child(3) a{
@@ -119,12 +119,22 @@ nav ul li:nth-child(3) a{
 }
 
 nav ul li:hover a{
+  text-shadow: 2px 2px 5px #FF0000;
   color:#FECC50;
 }
 
-nav ul li:nth-child(3):hover a{
-  color:#706784;
+nav ul li:nth-child(3):hover{
+  background-color: #FECC50;
+  box-shadow: 1px 1px 1px grey;
+  border-radius: 11px;
+  transform: scale(1.1);
 }
+
+nav ul li:nth-child(3):hover a{
+  color:#ffffff;
+  text-shadow: 0px 0px 0px #fff;
+}
+
 
 .hero{
   height: 110vh;
