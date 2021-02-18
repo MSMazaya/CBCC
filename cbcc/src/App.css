@@ -84,7 +84,6 @@ header{
   text-shadow: 2px 2px 5px #FECC50;
   left: 720px;
   top: 190px;
-  position: absolute;
   font-weight: 800;
   font-size: 28px;
   line-height: 49px;
@@ -160,7 +159,7 @@ nav ul li:nth-child(3):hover a{
 
 
 .hero{
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -168,11 +167,19 @@ nav ul li:nth-child(3):hover a{
   text-align: justify;
 }
 
+.hero-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
 .hero img{
   padding: 0;
   width: 436px;
   height: 181px;
-  margin-right: 260px;
 }
 
 .headline{
@@ -181,7 +188,7 @@ nav ul li:nth-child(3):hover a{
 }
 
 .headline ul{
-  margin-left: 50px;
+  margin-left: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -189,9 +196,18 @@ nav ul li:nth-child(3):hover a{
   gap: 20px;
 }
 
-.headline-items img{
-  width: 165px;
-  height: 90px;
+.headline-items .sejutacita{
+  padding: 0;
+  margin: 0;
+  width: 145px;
+  height: 70px;
+}
+
+.headline-items .sfl{
+  padding: 0;
+  margin: 0;
+  width: 125px;
+  height: 65px;
 }
 
 .headline li{
@@ -388,6 +404,7 @@ nav ul li:nth-child(3):hover a{
   width: 55vw;
   height: 277px;
   border: 9px solid #4A415F;
+  border-radius: 10px;
 }
 
 

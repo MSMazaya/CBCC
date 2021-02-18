@@ -37,8 +37,8 @@ const Question = ({question,answer}) => {
                 {dropdown && 
                         <motion.div
                         initial={{y:-50,opacity:0}}
-                        animate={{y:0,opacity:1}}
-                        exit={{y:-100,opacity:0}}
+                        animate={{y:-10,opacity:1}}
+                        exit={{y:-50,opacity:0}}
                         transition={{duration:.5}}
                         className="answer">
                             <p>{answer}</p>

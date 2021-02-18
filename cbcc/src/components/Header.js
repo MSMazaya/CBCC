@@ -53,13 +53,17 @@ const Header = () => {
                 duration:1    
             }}
             className="hero">
-                <img src="hero.png" alt="hero"/>
+                <div className="hero-items">
+                    <img src="hero.png" alt="hero"/>
+                    <div>
+                        <div className="kolab"><a>Collaboration With</a></div>
+                        <ul className="headline-items logo">
+                            <img className="sejutacita" src="sejutacita.png" alt="sejutacita"/>
+                            <img className='sfl' src="sfl.png" alt="sejutacita"/>
+                        </ul>
+                    </div>
+                </div>
                 <div className="headline">
-                    <ul className="headline-items logo">
-                        <img src="sejutacita.png" alt="sejutacita"/>
-                        <img src="sfl.png" alt="sejutacita"/>
-                    </ul>
-                <div className="kolab"><a>Collaboration With</a></div>
                     <ul className="headline-items">
                         <motion.li
                             whileHover="hover"
