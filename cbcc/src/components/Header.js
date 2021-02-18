@@ -55,6 +55,10 @@ const Header = () => {
             className="hero">
                 <img src="hero.png" alt="hero"/>
                 <div className="headline">
+                    <ul className="headline-items logo">
+                        <img src="sejutacita.png" alt="sejutacita"/>
+                        <img src="sfl.png" alt="sejutacita"/>
+                    </ul>
                     <ul className="headline-items">
                         <motion.li
                             whileHover="hover"

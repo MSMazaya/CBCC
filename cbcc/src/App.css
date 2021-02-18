@@ -158,6 +158,8 @@ nav ul li:nth-child(3):hover a{
 }
 
 .hero img{
+  padding: 0;
+  margin: 0;
   width: 586px;
   height: 255px;
 }
@@ -169,7 +171,6 @@ nav ul li:nth-child(3):hover a{
 
 .headline ul{
   margin-left: 50px;
-  padding:20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -177,8 +178,14 @@ nav ul li:nth-child(3):hover a{
   gap: 20px;
 }
 
+.headline-items img{
+  width: 142px;
+  height: 88px;
+  margin-bottom: 10px;
+}
+
 .headline li{
-  width: 150px;
+  width: 140px;
   height: 50px;
   background: #FECC50;
   display: flex;
@@ -216,7 +223,7 @@ nav ul li:nth-child(3):hover a{
 }
 
 .dekorasi2{
-  top: 540px;
+  top: 550px;
   left:-50px;
 }
 /* Subheader */
