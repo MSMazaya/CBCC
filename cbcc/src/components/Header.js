@@ -59,6 +59,7 @@ const Header = () => {
                         <img src="sejutacita.png" alt="sejutacita"/>
                         <img src="sfl.png" alt="sejutacita"/>
                     </ul>
+                <div className="kolab"><a>Collaboration With</a></div>
                     <ul className="headline-items">
                         <motion.li
                             whileHover="hover"

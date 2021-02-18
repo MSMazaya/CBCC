@@ -80,6 +80,17 @@ header{
   overflow: hidden;
 }
 
+.kolab a{
+  text-shadow: 2px 2px 5px #FECC50;
+  left: 720px;
+  top: 190px;
+  position: absolute;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 49px;
+  color: #FFB200;
+}
+
 nav{
   z-index: 1000;
   position: fixed;
@@ -159,9 +170,9 @@ nav ul li:nth-child(3):hover a{
 
 .hero img{
   padding: 0;
-  margin: 0;
-  width: 586px;
-  height: 255px;
+  width: 436px;
+  height: 181px;
+  margin-right: 260px;
 }
 
 .headline{
@@ -179,9 +190,8 @@ nav ul li:nth-child(3):hover a{
 }
 
 .headline-items img{
-  width: 142px;
-  height: 88px;
-  margin-bottom: 10px;
+  width: 165px;
+  height: 90px;
 }
 
 .headline li{
@@ -204,9 +214,13 @@ nav ul li:nth-child(3):hover a{
 .tentang {
   font-family: 'Kollektif';
   color: #ffffff;
-  padding:13px 12px 12px 11px;
+  font-size: 20px;
+  padding:13px 15px 12px 11px;
+  border-radius: 11px;
   /* box-shadow: 1px 1px 1px grey; */
 }
+
+
 
 .daftar {
   font-family: 'Kollektif';
@@ -346,6 +360,7 @@ nav ul li:nth-child(3):hover a{
   align-items: center;
   justify-content: center;
   gap: 42px;
+
 }
 
 .question{
@@ -357,18 +372,20 @@ nav ul li:nth-child(3):hover a{
   align-items: center;
   padding-left: 50px;
   padding-right: 20px;
-  width: 80vw;
-  height: 97px;
+  width: 55vw;
+  height: 63px;
   background-image: linear-gradient(129.84deg, #706784 13.07%, #FECC50 72.74%);
+  border-radius: 8px;
 }
 
 .question h1{
   color: #fff;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .answer{
-  width: 80vw;
+  width: 55vw;
   height: 277px;
   border: 9px solid #4A415F;
 }
