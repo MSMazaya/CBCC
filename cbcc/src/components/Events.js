@@ -10,6 +10,7 @@ const eventVariants = {
 const Events = () => {
     const [Events, setEvents] = useState([1,2])
     const [visible, setVisible] = useState(false)
+    const [inside, setInside] = useState(false)
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
@@ -48,9 +49,13 @@ const Events = () => {
                         
                     className="card-event">
                         <motion.div
-                        initial={{opacity:0.7}}
-                        whileHover={{opacity:0.2}}
+                        initial={{opacity:1}}
+                        whileHover={{opacity:0.5}}
                         className="card-inside">
+                            <div className="inside">
+                                <h1>{x}</h1>
+                                <a href="#">Learn More</a>
+                            </div>
                             <img src="contoh.jpg" alt="contoh"/>
                         </motion.div>
                     </motion.div>
