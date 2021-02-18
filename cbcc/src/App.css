@@ -342,10 +342,11 @@ nav ul li:nth-child(3):hover a{
   padding-right: 5px;
   width: 80vw;
   height: 97px;
-  background-color: #FF6D69;
+  background-image: linear-gradient(129.84deg, #706784 13.07%, #FECC50 72.74%);
 }
+
 .question h1{
-  color: #142A3D;
+  color: #fff;
   font-weight: 600;
 }
 
