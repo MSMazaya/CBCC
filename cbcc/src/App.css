@@ -1,4 +1,9 @@
 /* Baseline */
+@font-face {
+  font-family: "Kollektif";
+  src: url("Kollektif.ttf");
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -46,10 +51,10 @@ sama tambah class buat positioningnya
 
 .poligon1{
   height: 0;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 100px solid #FF6D69;
-  transform: rotate(180deg);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #FF6D69;
+  border-radius: 6px;
 }
 
 /* Header */
@@ -122,7 +127,6 @@ nav ul li:nth-child(3):hover a{
 }
 
 .hero{
-  margin-top: 40px;
   height: 110vh;
   display: flex;
   flex-direction: column;
@@ -142,6 +146,7 @@ nav ul li:nth-child(3):hover a{
 }
 
 .headline ul{
+  margin-left: 50px;
   padding:20px;
   display: flex;
   flex-direction: row;
@@ -150,34 +155,38 @@ nav ul li:nth-child(3):hover a{
   gap: 20px;
 }
 
-.tentang {
-  font-family: Kollektif;
-  color: #ffffff;
-  font-size: 20px;
+.headline li{
+  width: 150px;
+  height: 50px;
   background: #FECC50;
-  padding:13px 12px 12px 11px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   border-radius: 11px;
   box-shadow: 1px 1px 1px grey;
-} 
-.tentang:hover{
-  transform: scale(1.1);
+}
+
+.headline li a{
+  font-size: 25px;
+  line-height: 43px;
+}
+
+.tentang {
+  font-family: 'Kollektif';
+  color: #ffffff;
+  padding:13px 12px 12px 11px;
+  /* box-shadow: 1px 1px 1px grey; */
 }
 
 .daftar {
-  font-family: Kollektif;
+  font-family: 'Kollektif';
   color: #ffffff;
   font-size: 20px;
-  background: #FECC50;
   padding:13px 15px 12px 11px;
   border-radius: 11px;
-  box-shadow: 1px 1px 1px grey;
+  /* box-shadow: 1px 1px 1px grey; */
 }
-
-.daftar:hover {
-  transform: scale(1.1);
-}
-
-
 
 .dekorasi1{
   right: -70px;
@@ -185,8 +194,8 @@ nav ul li:nth-child(3):hover a{
 }
 
 .dekorasi2{
-  top: 450px;
-  left:-70px;
+  top: 540px;
+  left:-50px;
 }
 /* Subheader */
 .subheader{
