@@ -2,6 +2,7 @@ import React from 'react'
 import {useEffect} from 'react'
 import {motion,useAnimation} from 'framer-motion'
 import { useInView } from "react-intersection-observer";
+
 const leftVariants = {
     visible: {x:0,opacity:1},
     hidden: {x:-10,opacity:0}
@@ -53,6 +54,9 @@ const Subheader = () => {
                     transition={{duration:0.75}}
                     variants={rightVariants}
                 >Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body</motion.p>
+            </div>
+            <div className="cover">
+                <div className="elips2 bg-decoration subheader-dekorasi2"></div>
             </div>
         </div>
     )

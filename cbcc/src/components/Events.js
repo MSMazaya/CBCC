@@ -8,7 +8,7 @@ const eventVariants = {
 }
 
 const Events = () => {
-    const [Events, setEvents] = useState([1,2,3])
+    const [Events, setEvents] = useState([1,2])
     const [visible, setVisible] = useState(false)
     const controls = useAnimation();
     const [ref, inView] = useInView();
