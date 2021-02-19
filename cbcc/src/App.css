@@ -253,7 +253,7 @@ nav ul li:nth-child(3):hover a{
 }
 
 .dekorasi2{
-  top: 550px;
+  top: 490px;
   left:-50px;
 }
 /* Subheader */
@@ -304,7 +304,8 @@ nav ul li:nth-child(3):hover a{
 }
 
 .subheader-dekorasi2{
-  right: -100px;
+  top: 340px;
+  right: -120px;
 }
 
 /* Events */
@@ -430,18 +431,56 @@ footer{
   background-color: #4A415F;
 }
 footer p{
-  color: #FECC50;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #FFB200;
 }
 .adder{
   height: 5px;
 }
 .icons{
   position: absolute;
+  top : 3380px;
   left: 2.85%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
+  width: 39px;
+  height: 39px;
 }
+
+.sosmed a{
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.ig{
+  position: absolute;
+  font-size: 18px;
+  left : 98.4px;
+  top : 3445px;
+}
+
+.linea{
+  position: absolute;
+  font-size: 18px;
+  left : 98.4px;
+  top : 3390px;
+}
+
+.linked{
+  position: absolute;
+  left : 98.4px;
+  top : 3505px;
+}
+
+.emaila{
+  position: absolute;
+  font-size: 17px;
+  left : 98.4px;
+  top : 3550px;
+}
+
 footer .line{
   cursor: pointer;
 }
