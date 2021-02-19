@@ -1,0 +1,43 @@
+.pre-event-header{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: linear-gradient(180deg, #FECC50 0%, rgba(255, 255, 255, 0) 57.81%);
+    height: 100vh;
+}
+
+.pre-event-header h1{
+    font-size: 50px;
+}
+
+.pre-event-header a{
+    font-family: 'Kollektif';
+    color: black;
+    margin: auto;
+    font-size: 20px;
+    width: 157px;
+    height: 45px;
+    padding:13px 15px 12px 11px;
+    border-radius: 11px;
+    background: #FECC50;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.description{
+    display: flex;
+    width: 346px;
+    text-align: justify;
+}
+
+.header-part-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adder-preevent{
+    width: 30vw;
+}

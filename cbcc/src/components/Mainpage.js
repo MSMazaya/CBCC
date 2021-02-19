@@ -6,6 +6,7 @@ import Subheader from './mainpage/Subheader'
 import Footer from "./mainpage/Footer"
 import Faq from "./mainpage/Faq"
 import Sponsor from "./mainpage/Sponsor"
+import Mediapartner from './mainpage/Mediapartner'
 
 const Mainpage = ({ref}) => {
     return (
@@ -16,6 +17,7 @@ const Mainpage = ({ref}) => {
             <Timeline/>
             <Faq/>
             <Sponsor/>
+            <Mediapartner/>
             <Footer/>
         </div>
     )

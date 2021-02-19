@@ -37,7 +37,7 @@ const Subheader = () => {
                     initial="hidden"
                     transition={{duration:0.5}}
                     variants={rightVariants}
-                >Collegacy Business Case Competition</motion.h1>   
+                >Collegacy Business&nbsp;Case Competition</motion.h1>   
             </div>
             <div className="subheader-item2">
                 <motion.h1

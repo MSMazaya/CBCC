@@ -296,7 +296,7 @@ header{
 
 .subheader-item h1{
   font-size: 48px;
-  line-height: 45px;
+  line-height: 50px;
   color: #FECC50;
   font-weight: 550;
 }
@@ -353,23 +353,39 @@ header{
 } */
 
 .card-event img{
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
 
 .card-inside{
+  background-image:rgba(131, 39, 150, 1);
   z-index: 100;
   height: 100%;
   width: 100%;
-  background-color: #E5E5E5;
 }
 
-.card-inside .inside{
-  position: relative;
+.inside{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
 }
+
+.inside .link{
+  font-family: 'Kollektif';
+  color: #ffffff;
+  font-size: 20px;
+  padding:13px 15px 12px 11px;
+  border-radius: 11px;
+  border: solid;
+}
+
 
 /* Timeline */
 .timeline{
@@ -418,8 +434,8 @@ header{
 
 
 .question img{
-  height: 27.787498474121094px;
-  width: 45px;
+  height: 15px;
+  width: 27px;
 }
 
 .answer{
@@ -441,6 +457,18 @@ header{
   justify-content: center;
 }
 
+/* Media Partner */
+
+.mediapartner{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Footer */
 footer{
   position: relative;
@@ -452,6 +480,7 @@ footer{
   height: 279px;
   background-color: #4A415F;
 }
+
 footer p{
   margin-top: 15px;
   font-weight: 600;
