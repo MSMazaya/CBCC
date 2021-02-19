@@ -2,7 +2,20 @@ import React from 'react'
 import {motion} from 'framer-motion'
 const Header = () => {
     return (
-        <div className="pre-event-header">
+        <motion.div 
+        initial={{
+            opacity:0,
+            y:20
+        }}
+        animate={{
+            opacity:1,
+            y:0
+        }}
+        transition={{
+            delay:1,
+            duration:1    
+        }}
+        className="pre-event-header">
             <div className="header-part-1">
                 <h1 >Pre-event</h1>
                 <motion.a
@@ -13,7 +26,7 @@ const Header = () => {
                 <p>Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body </p>
             </div>
             <div className="adder-preevent"></div>
-        </div>
+        </motion.div>
     )
 }
 
