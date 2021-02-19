@@ -7,7 +7,7 @@ const eventVariants = {
     hidden: {y:30,opacity:0},
 }
 
-const Events = () => {
+const Events = ({myref}) => {
     const [Events, setEvents] = useState([1,2])
     const [visible, setVisible] = useState(false)
     const [inside, setInside] = useState(false)

@@ -1,22 +1,18 @@
 import './App.css';
-import Header from "./components/Header"
-import Events from "./components/Events"
-import Timeline from "./components/Timeline"
-import Subheader from './components/Subheader'
-import Footer from "./components/Footer"
-import Faq from "./components/Faq"
-import Sponsor from "./components/Sponsor"
+import Navbar from "./components/Navbar"
+import Mainpage from "./components/Mainpage"
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom"
 
 function App() {
+  const events = document.getElementsByClassName("events"); 
+  const scroll = () => events.scrollIntoView();
   return (
     <div className="App">
-      <Header/>
-      <Subheader/>
-      <Events/>
-      <Timeline/>
-      <Faq/>
-      <Sponsor/>
-      <Footer/>
+      <Navbar scroll={scroll}/>
+      <Router>
+        <Route path="/" exact component={Mainpage}/>
+        
+      </Router>
     </div>
   );
 }
