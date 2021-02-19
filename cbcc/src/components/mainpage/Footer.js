@@ -13,7 +13,7 @@ const Footer = () => {
     useEffect(() => {
         if (clicked['status']) {
         // do something meaningful, Promises, if/else, whatever, and then
-        window.location.assign(link[clicked['jenis']]);
+        window.open(link[clicked['jenis']]);
         }
     },[clicked]);
     return (

@@ -57,6 +57,7 @@ const Subheader = () => {
             </div>
             <div className="cover">
                 <div className="elips2 bg-decoration subheader-dekorasi2"></div>
+                <div className="elips3 bg-decoration subheader-dekorasi2"></div>
             </div>
         </div>
     )
