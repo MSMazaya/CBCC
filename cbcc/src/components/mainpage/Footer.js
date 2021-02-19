@@ -37,7 +37,6 @@ const Footer = () => {
                     <img onClick={()=>setClicked({jenis:"email",status:true})} className="icon email" src="email.png" alt="email" href="mailto:participants.collegacybcc@gmail.com" target="_blank"/>
                     <a className="emaila" href="mailto:participants.collegacybcc@gmail.com" target="_blank">participants.collegacybcc@gmail.com</a>
                 </div>
-                <div className="adder"></div>
             </div>
             
         </footer>
