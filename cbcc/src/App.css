@@ -121,6 +121,7 @@ nav ul li{
 
 nav a{
   font-weight: bold;
+  cursor: pointer;
 }
 
 nav ul li:nth-child(3){
@@ -385,6 +386,7 @@ header{
   border-radius: 11px;
   border: solid;
 }
+
 
 
 /* Timeline */

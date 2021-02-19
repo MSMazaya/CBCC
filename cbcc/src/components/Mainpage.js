@@ -7,10 +7,13 @@ import Footer from "./mainpage/Footer"
 import Faq from "./mainpage/Faq"
 import Sponsor from "./mainpage/Sponsor"
 import Mediapartner from './mainpage/Mediapartner'
-
-const Mainpage = ({ref}) => {
+import {AnimatePresence, motion} from 'framer-motion'
+const Mainpage = () => {
     return (
-        <div>
+        <motion.div
+        exit={{opacity:0,y:1000}}
+        transition={{duration:1}}
+        >
             <Header/>
             <Subheader/>
             <Events/>
@@ -19,7 +22,7 @@ const Mainpage = ({ref}) => {
             <Sponsor/>
             <Mediapartner/>
             <Footer/>
-        </div>
+        </motion.div>   
     )
 }
 

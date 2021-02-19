@@ -16,10 +16,15 @@ const cardVariant = {
     visible: {opacity:0.5},
     hidden: {opacity:1},
 }
+const buttonVariant = {
+    visible: {backgroundColor:'white',color:'#4A415F'},
+    hidden: {backgroundColor:'transparent',color:'white'},
+}
 
 const Eventcard = ({x,nama,link}) => {
     const controls = useAnimation();
     const controlinside = useAnimation();
+    const controlbutton = useAnimation();
     const [ref, inView] = useInView();
     useEffect(()=>{
         if(inView){
@@ -53,7 +58,15 @@ const Eventcard = ({x,nama,link}) => {
                         variants={insideVariant}
                         className="inside">
                             <h1>{nama}</h1>
-                            <Link className='link' to={link}>Learn More</Link>
+                            <motion.div
+                            onMouseOver={() => controlbutton.start('visible')}
+                            onMouseLeave={() => controlbutton.start('hidden')}
+                            variants={buttonVariant}
+                            initial='hidden'
+                            animate={controlbutton}
+                            className='link'>
+                                <Link className="textlink" to={link}>Learn More</Link>
+                            </motion.div>                            
                         </motion.div>
                     </motion.div>
         </div>

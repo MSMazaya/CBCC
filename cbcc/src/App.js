@@ -2,19 +2,24 @@ import './App.css';
 import './preevent.css';
 import Navbar from "./components/Navbar"
 import Mainpage from "./components/Mainpage"
-import {Route, BrowserRouter as Router, Switch} from "react-router-dom"
+import {Route, Switch, useLocation} from "react-router-dom"
 import Preevent from './components/Preevent';
-
+import {AnimatePresence} from 'framer-motion'
 function App() {
-  const events = document.getElementsByClassName("events"); 
-  const scroll = () => events.scrollIntoView();
+  const location = useLocation()
   return (
     <div className="App">
-      <Navbar scroll={scroll}/>
-      <Router>
-        <Route path="/" exact component={Mainpage}/>
-        <Route path="/preevent" component={Preevent}/>
-      </Router>
+      <Navbar location={location}/>
+      <AnimatePresence>
+        <Switch location={location} key={location.key}>
+          <Route path="/preevent">
+            <Preevent/>
+          </Route>
+          <Route exact path="/">
+            <Mainpage/>
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }

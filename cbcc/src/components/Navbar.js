@@ -1,8 +1,9 @@
 import React from 'react'
 import {useState} from 'react'
 import {motion} from 'framer-motion'
+import {Link} from 'react-router-dom'
 
-const Navbar = ({scroll}) => {
+const Navbar = ({location}) => {
     const [Navbar, setNavbar] = useState(false)
 
     const changeBackground = () => {
@@ -34,8 +35,15 @@ const Navbar = ({scroll}) => {
                 <img src="logo.png" alt="logo"/>  
                 <div className="navbar">
                     <ul className="nav-items">
-                        <li><a href="">Home</a></li>
-                        <li><a onClick={()=>{scroll()}}>Event</a></li>
+                        <li>
+                        {location.pathname === "/" ?
+                            <a>Home</a> :
+                            <Link to='/'>Home</Link>
+                        }
+                            
+                            
+                        </li>
+                        <li><a>Event</a></li>
                         <li classname="register"><a href="">Register Now</a></li>
                     </ul>
                 </div>
