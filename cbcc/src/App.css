@@ -403,6 +403,12 @@ header{
   font-size: 18px;
 }
 
+
+.question img{
+  height: 27.787498474121094px;
+  width: 45px;
+}
+
 .answer{
   width: 55vw;
   height: 277px;
@@ -442,7 +448,7 @@ footer p{
 }
 .icons{
   position: absolute;
-  top : 3380px;
+  top : 3280px;
   left: 2.85%;
   display: flex;
   flex-direction: column;
@@ -451,41 +457,36 @@ footer p{
   height: 39px;
 }
 
-.sosmed a{
+.icons a{
   font-weight: 500;
   color: #ffffff;
 }
+.wrap-sosmed{
+  height: 46.5px;
+  width: 45.90833282470703px; 
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon{
+  width: 39px;
+  height: 39px;
+}
 
 .ig{
-  position: absolute;
   font-size: 18px;
-  left : 98.4px;
-  top : 3445px;
 }
 
 .linea{
-  position: absolute;
   font-size: 18px;
-  left : 98.4px;
-  top : 3390px;
-}
-
-.linked{
-  position: absolute;
-  left : 98.4px;
-  top : 3505px;
 }
 
 .emaila{
-  position: absolute;
   font-size: 17px;
-  left : 98.4px;
-  top : 3550px;
 }
 
-footer .line{
-  cursor: pointer;
-}
-footer .instagram{
-  cursor: pointer;
+footer .icons img:Hover{
+    cursor: pointer;
 }
