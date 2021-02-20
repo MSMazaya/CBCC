@@ -38,6 +38,16 @@ sama tambah class buat positioningnya
  ps: bg-decoration harus ditambahin, dan decoration harus di wrap sama .cover
 */
 
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
 .cover{
   overflow: hidden;
 }
@@ -405,6 +415,49 @@ header{
   justify-content: center;
 }
 
+.timeline .picker{
+  font-weight: 600;
+  font-size: large;
+  gap: 50px;
+}
+
+.timeline a{
+  cursor: pointer;
+  padding: 10px;
+}
+
+.timeline a.picked{
+  border-bottom: solid 5px #FECC50;
+}
+.gap{
+  height: 70px;
+}
+
+.line{
+  position: absolute;
+  left: 22%;
+  justify-content: space-between;
+  width: 57vw;
+  background-color: #4A415F;
+  height: 7px;
+  border-radius: 10px;
+}
+
+.timeline-container{
+  gap: 15.5vw;
+}
+
+.circle{
+  position: relative;
+  top: -15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FECC50;
+}
+
+
+
 /* Faq */
 .faq{
   height: auto;
@@ -455,7 +508,8 @@ header{
 
 /* Sponsor */
 .sponsor{
-  height: 100vh;
+  margin-top: 100px;
+  height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -463,7 +517,21 @@ header{
   align-items: center;
   justify-content: center;
 }
-
+.logo-sponsor{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+.sejutacita-sponsor{
+  width: 400px;
+}
+.sfl-sponsor{
+  width: 400px;
+  height: 202px;
+}
 /* Media Partner */
 
 .mediapartner{
