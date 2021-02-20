@@ -65,6 +65,7 @@ sama tambah class buat positioningnya
 
 .elips2{
   display: inline-block;
+  left: -120px;
   width: 212px;
   height: 212px;
   border-radius: 50%;
@@ -72,6 +73,7 @@ sama tambah class buat positioningnya
   border-width: 49px;
   border-color: #706784;
   background-color: rgba(0, 0, 0, 0);
+  filter: drop-shadow(2px 6px 6px rgba(0, 0, 0, 0.25));
   pointer-events:none;
 }
 
@@ -79,12 +81,15 @@ sama tambah class buat positioningnya
   display: inline-block;
   width: 212px;
   height: 212px;
-  left: -91px;
+  bottom: 300px;
+  top: 60px;
+  right: -130px;
   border-radius: 50%;
   border-style: solid;
   border-width: 49px;
-  border-color: #706784;
+  border-color: #FECC50;
   background-color: rgba(0, 0, 0, 0);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   pointer-events:none;
 }
 
@@ -567,6 +572,9 @@ header{
   width: 235px;
   height: 127px;
 }
+
+
+
 /* Media Partner */
 
 .mediapartner{

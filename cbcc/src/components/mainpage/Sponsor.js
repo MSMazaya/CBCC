@@ -8,7 +8,6 @@ const Sponsor = () => {
                 <img className="sejutacita-sponsor" src="sejutacita.png" alt="sejutacita"/>
                 <img className='sfl-sponsor' src="sfl.png" alt="sejutacita"/>
             </div>
-        
         </div>
     )
 }
