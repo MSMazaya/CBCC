@@ -22,7 +22,7 @@ const Footer = () => {
             <p>@Information System and Technology CBCC</p>
             <div className="icons">
                 <div className="wrap-sosmed">
-                    <img onClick={()=>setClicked({jenis:"line",status:true})}  className="icon line" src="line.png" alt="line" href="https://page.line.me/725fevya" target="_blank"/>
+                    <img onClick={()=>setClicked({jenis:"line",status:true})}  className="icon" src="line.png" alt="line" href="https://page.line.me/725fevya" target="_blank"/>
                     <a className="linea" href="https://page.line.me/725fevya" target="_blank">@725fevya</a>
                 </div>
                 <div className="wrap-sosmed">
@@ -38,7 +38,6 @@ const Footer = () => {
                     <a className="emaila" href="mailto:participants.collegacybcc@gmail.com" target="_blank">participants.collegacybcc@gmail.com</a>
                 </div>
             </div>
-            
         </footer>
     )
 }
