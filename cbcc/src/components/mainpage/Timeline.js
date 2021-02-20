@@ -4,9 +4,9 @@ const Timeline = () => {
     return (
         <div className="timeline">
             <h1 className="sub-title">Timeline</h1>
-            <div className="picker flex-row">
-                <a>Something</a>
-                <a>Something</a>
+            <div className="judul">
+                <a>Pre-Event</a>
+                <a>Business Case Competition</a>
             </div>
             <div className="gap"></div>
             <div className='flex-col'>
