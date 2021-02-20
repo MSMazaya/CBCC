@@ -456,6 +456,10 @@ header{
   background: #FECC50;
 }
 
+.circle:hover{
+  box-shadow: 2px 2px 30px #FFB200;
+}
+
 
 
 /* Faq */
@@ -526,11 +530,12 @@ header{
   width: 100%;
 }
 .sejutacita-sponsor{
-  width: 400px;
+  width: 283px;
+  height: 141px;
 }
 .sfl-sponsor{
-  width: 400px;
-  height: 202px;
+  width: 235px;
+  height: 127px;
 }
 /* Media Partner */
 
@@ -584,20 +589,22 @@ footer p{
   width: 45.90833282470703px; 
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 18px;
   align-items: center;
 }
 
 .icon{
-  width: 45px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
+
 
 .ig{
   font-size: 18px;
 }
 
 .linea{
+  margin-left: 58px;
   font-size: 18px;
 }
 
