@@ -19,7 +19,7 @@ const Navbar = ({location}) => {
 
     const scroll =  (amountToScroll)=>{
         //amount to scroll is negative to scroll up
-        window.scrollBy(0 , amountToScroll)
+        window.scrollTo(0 , amountToScroll)
     }
 
     return (
