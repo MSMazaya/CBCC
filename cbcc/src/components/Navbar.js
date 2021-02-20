@@ -42,13 +42,13 @@ const Navbar = ({location}) => {
                     <ul className="nav-items">
                         <li>
                         {location.pathname === "/" ?
-                            <a>Home</a> :
-                            <Link to='/'>Home</Link>
+                            <a onClick={()=>scroll(0)}>Home</a> :
+                            <a>Home</a>
                         }
                         </li>
                         <li>
                         {location.pathname === "/" ?
-                        <a onClick={()=>scroll(1150)}>Event</a> :
+                        <a onClick={()=>scroll(1100)}>Event</a> :
                         <a>Event</a> 
                         }
                             
