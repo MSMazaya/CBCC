@@ -11,6 +11,10 @@
   color: #706784;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App{
   background-color: #ffffff;
   overflow: hidden;
@@ -239,6 +243,7 @@ header{
 }
 
 .headline li a{
+  cursor: pointer;
   font-size: 25px;
   line-height: 43px;
 }

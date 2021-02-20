@@ -1,6 +1,10 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 const Header = () => {
+    const scroll =  (amountToScroll)=>{
+        //amount to scroll is negative to scroll up
+        window.scrollBy(0 , amountToScroll)
+    }
     return (
         <header>
             <motion.div
@@ -36,7 +40,7 @@ const Header = () => {
                                     scale:1.1,
                                 }
                             }}
-                        ><a className="tentang" href="">About Us</a></motion.li>
+                        ><a className="tentang" onClick={()=>scroll(600)}>About Us</a></motion.li>
                         <motion.li
                             whileHover="hover"
                             variants={{

@@ -17,6 +17,11 @@ const Navbar = ({location}) => {
 
     window.addEventListener('scroll',changeBackground)
 
+    const scroll =  (amountToScroll)=>{
+        //amount to scroll is negative to scroll up
+        window.scrollBy(0 , amountToScroll)
+    }
+
     return (
         <div>
             <motion.nav className={Navbar ? "active" : "" }
@@ -40,10 +45,14 @@ const Navbar = ({location}) => {
                             <a>Home</a> :
                             <Link to='/'>Home</Link>
                         }
-                            
-                            
                         </li>
-                        <li><a>Event</a></li>
+                        <li>
+                        {location.pathname === "/" ?
+                        <a onClick={()=>scroll(1150)}>Event</a> :
+                        <a>Event</a> 
+                        }
+                            
+                            </li>
                         <li classname="register"><a href="">Register Now</a></li>
                     </ul>
                 </div>

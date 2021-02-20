@@ -3,11 +3,10 @@ import Header from "./mainpage/Header"
 import Events from "./mainpage/Events"
 import Timeline from "./mainpage/Timeline"
 import Subheader from './mainpage/Subheader'
-import Footer from "./mainpage/Footer"
 import Faq from "./mainpage/Faq"
 import Sponsor from "./mainpage/Sponsor"
 import Mediapartner from './mainpage/Mediapartner'
-import {AnimatePresence, motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 const Mainpage = () => {
     return (
         <motion.div
@@ -21,7 +20,6 @@ const Mainpage = () => {
             <Faq/>
             <Sponsor/>
             <Mediapartner/>
-            <Footer/>
         </motion.div>   
     )
 }
