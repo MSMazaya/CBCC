@@ -19,8 +19,8 @@ function App() {
           <Route path="/competition" component={Competition}/>
           <Route exact path="/" component={Mainpage}/>
         </Switch>
-        <Footer/>
       </AnimatePresence>
+      <Footer/>
     </div>
   );
 }
