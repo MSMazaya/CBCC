@@ -31,7 +31,10 @@ const Eventcard = ({x,nama,link}) => {
             controls.start('visible')
         }
     }, [controls,inView])
-
+    const scroll =  (amountToScroll)=>{
+        //amount to scroll is negative to scroll up
+        window.scrollTo(0 , amountToScroll)
+    }
     return (
         <div>
             <motion.div           
@@ -65,7 +68,7 @@ const Eventcard = ({x,nama,link}) => {
                             initial='hidden'
                             animate={controlbutton}
                             className='link'>
-                                <Link className="textlink" to={link}>Learn More</Link>
+                                <Link className="textlink" onClick={()=>scroll(0)} to={link}>Learn More</Link>
                             </motion.div>                            
                         </motion.div>
                     </motion.div>

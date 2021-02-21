@@ -10,8 +10,10 @@ import {motion} from 'framer-motion'
 const Mainpage = () => {
     return (
         <motion.div
-        exit={{opacity:0,y:1000}}
-        transition={{duration:1}}
+        exit={{opacity:0}}
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.5}}
         >
             <Header/>
             <Subheader/>
