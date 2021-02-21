@@ -19,7 +19,7 @@ const Footer = () => {
     return (
         <footer>
             <img src="logo-footer.png" alt="footer"/>
-            <p>@Information System and Technology CBCC</p>
+            <p>© Information System and Technology CBCC</p>
             <div className="icons">
                 <div className="wrap-sosmed">
                     <img onClick={()=>setClicked({jenis:"line",status:true})}  className="icon" src="line.png" alt="line" href="https://page.line.me/725fevya" target="_blank"/>

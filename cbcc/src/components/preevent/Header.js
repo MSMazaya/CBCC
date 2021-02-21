@@ -1,6 +1,14 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+
+
 const Header = () => {
+
+    const scroll =  (amountToScroll)=>{
+        //amount to scroll is negative to scroll up
+        window.scrollTo(0 , amountToScroll)
+    }
+    
     return (
         <motion.div 
         initial={{
@@ -20,7 +28,7 @@ const Header = () => {
                 <h1 >Pre-event</h1>
                 <motion.a
                 whileHover={{scale:1.1}}
-                href="">Timeline</motion.a>
+                onClick={()=>scroll(1230)}>Timeline</motion.a>
             </div>
             <div className="description">
                 <p>Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body </p>
