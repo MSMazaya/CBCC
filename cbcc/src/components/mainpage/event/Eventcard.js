@@ -69,6 +69,10 @@ const Eventcard = ({x,nama,link}) => {
                             </motion.div>                            
                         </motion.div>
                     </motion.div>
+            <div className="cover">
+                <a className="x1">x</a>
+                <a className="x2">x</a>
+            </div>
         </div>
     )
 }
