@@ -555,7 +555,7 @@ header{
   gap: 15.5vw;
 }
 
-.circle .tl{
+.tl{
   position: relative;
   top: -15px;
   width: 40px;
