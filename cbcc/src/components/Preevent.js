@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import Subheader from './preevent/Subheader.js'
 import Faq from './preevent/Faq.js'
 import Timeline from './preevent/Timeline.js'
+import Speaker from './preevent/Speaker.js'
 const Preevent = () => {
     return (
         <motion.div
@@ -13,7 +14,10 @@ const Preevent = () => {
             <Header/>
             <Subheader/>
             <Timeline/>
+            <Speaker/>
+            <div className="gap-preevent2"></div>
             <Faq/>
+            <div className="gap-preevent2"></div>
         </motion.div>
     )
 }

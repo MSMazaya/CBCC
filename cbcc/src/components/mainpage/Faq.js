@@ -19,17 +19,6 @@ const Faq = () => {
                     <Question question={x.question} answer={x.answer}/>
                 </div>
             })}
-            
-           
-            {/* <div className="question">
-                <h1>Berapa hasil 1 + 1</h1>
-            </div>
-            <div className="question">
-                <h1>Berapa hasil 1 + 1</h1>
-            </div>
-            <div className="question">
-                <h1>Berapa hasil 1 + 1</h1>
-            </div> */}
         </div>
     )
 }

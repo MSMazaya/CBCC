@@ -12,10 +12,10 @@ const Timeline = () => {
             <div className='flex-col'>
                 <div className="line"></div>
                 <div className="timeline-container flex-row">   
-                    <div className="circle"></div>
-                    <div className="circle"></div>
-                    <div className="circle"></div>
-                    <div className="circle"></div>
+                    <div className="circle tl"></div>
+                    <div className="circle tl"></div>
+                    <div className="circle tl"></div>
+                    <div className="circle tl"></div>
                 </div>
             </div>
         </div>

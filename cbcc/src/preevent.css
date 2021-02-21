@@ -1,3 +1,5 @@
+/* Header */
+
 .pre-event-header{
     display: flex;
     flex-direction: row;
@@ -7,7 +9,6 @@
     background-color: linear-gradient(180deg, #FECC50 0%,black 100%);
     height: 100vh;
 }
-
 
 .pre-event-header h1{
     font-size: 50px;
@@ -41,4 +42,77 @@
 
 .adder-preevent{
     width: 30vw;
+}
+
+/* Subheader */
+
+.sub-header-preevent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+.sub-header-preevent article{
+    max-width: 30vw;
+    gap: 30px;
+}
+
+.sub-header-preevent article h1{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 70px;
+    color: #FECC50;
+}
+
+.talkshow{
+    width: 300px;
+    height: 300px;
+    background-color: #C4C4C4;
+}
+
+/* Timeline */
+.preevent-timeline{
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+}
+.pointer-wrapper{
+    gap: 20px;
+}
+
+/* Speaker */
+.Speaker{
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+}
+
+.speaker-container{
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.Speaker h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.speaker{
+    width: 200px;
+    height: 200px;
+    background-color: #C4C4C4;
+}
+
+.speaker-card p{
+    width: 199px;
+}
+
+/* Useless */
+.gap-preevent2{
+    height: 300px;
 }
