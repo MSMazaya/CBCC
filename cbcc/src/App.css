@@ -174,6 +174,21 @@ sama tambah class buat positioningnya
   transform: rotate(9.88deg);
 }
 
+.btn{
+  width: 140px;
+  height: 50px;
+  background: #FECC50;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  box-shadow: 1px 1px 1px grey;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
 /* Navbar */
 
 nav{
@@ -508,9 +523,11 @@ header{
   padding: 10px;
 }
 
-.timeline a.picked{
-  border-bottom: solid 5px #FECC50;
+.timeline a.picked:after{
+  width: 100%; 
+  left: 0; 
 }
+
 
 .gap{
   height: 70px;
@@ -556,7 +573,8 @@ header{
 }
 
 .timeline-container{
-  gap: 25vw;
+  width: 57.5vw;
+  justify-content: space-between;
 }
 
 
@@ -570,6 +588,7 @@ header{
 
 .circle:hover{
   box-shadow: 2px 2px 35px #FFB600;
+  cursor: pointer;
 }
 
 .text:hover{

@@ -5,4 +5,28 @@
     justify-content: space-evenly;
     position: relative;
     overflow: hidden;
+    margin-bottom: 100px;
 }
+
+.title-button-wrapper{
+    gap: 30px;
+    position: relative;
+    left: 10%;
+}
+
+.title-button-wrapper h1{
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;;
+}
+
+.competition-header .btn{
+    width: 170px;
+}
+
+.btn-wrapper{
+    gap: 50px;
+}
+
