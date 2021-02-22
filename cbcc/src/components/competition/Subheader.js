@@ -32,7 +32,7 @@ const Subheader = () => {
                 position:"relative",
                 left:"25%"
             }}>
-                <h1 style={{fontSize:"50px"}}>Business Case <br/> Competition</h1>
+                <h1 style={{fontSize:"50px", marginTop:"110px"}}>Business Case <br/> Competition</h1>
                 <p>Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body </p>
             </div>
             <div className="subheader-item">
@@ -51,7 +51,7 @@ const Subheader = () => {
                     variants={rightVariants}
                 >Individual Preliminary Challenge</motion.h1>   
             </div>
-            <div className="subheader-item">
+            <div style={{marginBottom :"105px", fontSize:"15px"}}className="subheader-item">
                 <motion.h1
                     ref={ref}
                     animate={controls}
