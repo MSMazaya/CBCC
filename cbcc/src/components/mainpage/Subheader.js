@@ -30,7 +30,9 @@ const Subheader = () => {
                     initial="hidden"
                     transition={{duration:0.5}}
                     variants={leftVariants}
-                >Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body</motion.p>
+                >CBCC adalah lomba bisnis tahunan yang diadakan oleh Collegacy Bandung, lomba ini diperuntukan bagi mahasiswa
+                dimana mereka diharapkan mampu menyampaikan ide inovatif yang akan mengarah pada tantangan di era yang dinamis, terutama
+                dalam bidang teknologi</motion.p>
                 <motion.h1
                     ref={ref}
                     animate={controls}
@@ -53,7 +55,8 @@ const Subheader = () => {
                     initial="hidden"
                     transition={{duration:0.75}}
                     variants={rightVariants}
-                >Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body</motion.p>
+                >CBCC diharapkan dapat menjadi wadah bagi seluruh mahasiswa Indonesia baik di dalam negeri maupun luar negeri, untuk
+                saling berkolaborasi memberikan kontribusi yang inovatif di bidang teknologi</motion.p>
             </div>
             <div className="cover">
                 <div className="elips2 bg-decoration subheader-dekorasi2"></div>
