@@ -37,7 +37,9 @@ const Navbar = ({location}) => {
                     damping:14,
                 }}
             >
+                <Link to='/'>
                 <img src="logo.png" alt="logo"/>  
+                </Link>
                 <div className="navbar">
                     <ul className="nav-items">
                         <li>
@@ -49,7 +51,8 @@ const Navbar = ({location}) => {
                         <li>
                         {location.pathname === "/" ?
                         <a onClick={()=>scroll(1100)}>Events</a> :
-                        <a onClick={()=>scroll(580)}>Events</a> 
+                        <a onClick={()=>scroll(785)}>Events</a>
+                        
                         }
                             
                             </li>

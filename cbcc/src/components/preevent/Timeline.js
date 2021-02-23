@@ -27,9 +27,28 @@ const Timeline = () => {
         <div className="preevent-timeline flex-col">
             <h1 className="sub-title">Timeline</h1>
             <div className='flex-row pointer-wrapper'>
-                <div onClick={()=>setGroup(0)} className="pointer"></div>
-                <div onClick={()=>setGroup(1)} className="pointer"></div>
-                <div onClick={()=>setGroup(2)} className="pointer"></div>
+                <div onClick={()=>setGroup(0)} className="pointer">
+                    <div className="temlen">
+                    <a className="tanggal">5 Februari</a>
+                    <a className="lipe">Live IG 1</a>
+                    <a className="jdl">“Introduction of Collegacy Bandung and CBCC”</a>
+                    </div>
+                    
+                </div>
+                <div onClick={()=>setGroup(1)} className="pointer">
+                <div className="temlen">
+                    <a className="tanggal">20 Februari</a>
+                    <a className="lipe2">Live IG 2</a>
+                    <a className="jdl2">“Break Your Limit ”</a>
+                    </div>
+                </div>
+                <div onClick={()=>setGroup(2)} className="pointer">
+                <div className="temlen">
+                    <a className="tanggal">20 Maret</a>
+                    <a className="lipe">Live IG 3</a>
+                    <a className="jdl">“Outstanding Students 101”</a>
+                    </div>
+                </div>
             </div>
             <Subheader nama={timelineGroup[group].nama} posisi={timelineGroup[group].posisi} judul={timelineGroup[group].judul} deskripsi={timelineGroup[group].deskripsi} />
         </div>
