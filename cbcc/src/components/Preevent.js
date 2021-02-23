@@ -12,9 +12,7 @@ const Preevent = () => {
         transition={{duration:0.5}}
         >
             <Header/>
-            <Subheader/>
             <Timeline/>
-            <Speaker/>
             <div className="gap-preevent2"></div>
             <Faq/>
             <div className="gap-preevent2"></div>

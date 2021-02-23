@@ -24,7 +24,7 @@ const Navbar = ({location}) => {
 
     return (
         <div>
-            <motion.nav className={Navbar ? "active" : "" }
+            <motion.nav className={Navbar ? (location.pathname === '/competition' ? "active-competition" : "active") : (location.pathname === '/competition' ? "nav-competition" : "") }
                 initial={{
                     y:-1000,
                 }}

@@ -1,38 +1,57 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {motion} from 'framer-motion'
 
 const Timeline = () => {
+    const [timelineTypes, setTimelineTypes] = useState(true)
     return (
         <div className="preevent-timeline flex-col">
             <h1 className="sub-title">Timeline</h1>
-            <div className='flex-row pointer-wrapper'>            <motion.div
-                            whileHover="hover"
-                            variants={{
-                                hover:{
-                                    opacity: "0.8",
-                                }
-                            }}
-                        >
-                <div className="pointer"></div></motion.div>
-                <motion.div
-                            whileHover="hover"
-                            variants={{
-                                hover:{
-                                    opacity: "0.8",
-                                }
-                            }}
-                        >
-                <div className="pointer"></div></motion.div>
-                <motion.div
-                            whileHover="hover"
-                            variants={{
-                                hover:{
-                                    opacity: "0.8",
-                                }
-                            }}
-                        >
-                <div className="pointer"></div></motion.div>
-                <motion.div
+            <div className="judul">
+                <a whileHover={()=>{}} className={timelineTypes ? "picked" : ""} onClick={()=>setTimelineTypes(true)}>Individual Preliminary</a>
+                <a className={timelineTypes ? "" : "picked"} onClick={()=>setTimelineTypes(false)}>Collaboration Challenge</a>
+            </div>
+            {timelineTypes ? 
+                    <div className='flex-row pointer-wrapper'>            
+                    <motion.div
+                                    whileHover="hover"
+                                    variants={{
+                                        hover:{
+                                            opacity: "0.8",
+                                        }
+                                    }}
+                                >
+                        <div className="pointer"></div></motion.div>
+                        <motion.div
+                                    whileHover="hover"
+                                    variants={{
+                                        hover:{
+                                            opacity: "0.8",
+                                        }
+                                    }}
+                                >
+                        <div className="pointer"></div></motion.div>
+                        <motion.div
+                                    whileHover="hover"
+                                    variants={{
+                                        hover:{
+                                            opacity: "0.8",
+                                        }
+                                    }}
+                                >
+                        <div className="pointer"></div></motion.div>
+                        <motion.div
+                                    whileHover="hover"
+                                    variants={{
+                                        hover:{
+                                            opacity: "0.8",
+                                        }
+                                    }}
+                                >
+                        <div className="pointer"></div></motion.div>
+                    </div>
+            :
+            <div className='flex-row pointer-wrapper'>            
+            <motion.div
                             whileHover="hover"
                             variants={{
                                 hover:{
@@ -42,6 +61,8 @@ const Timeline = () => {
                         >
                 <div className="pointer"></div></motion.div>
             </div>
+            }
+            
             <div className="flex-row"
                 style={{
                     gap:"30px",

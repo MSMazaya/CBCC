@@ -8,6 +8,7 @@
     justify-content: center;
     background-image: linear-gradient(180deg, #FECC50 -80%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
     height: 100vh;
+    margin-bottom: 30vh;
 }
 
 .pre-event-header h1{
@@ -47,25 +48,44 @@
 
 /* Subheader */
 
-.sub-header-preevent{
+.speaker-preevent{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 7vw;
     height: 100vh;
 }
 
-.sub-header-preevent article{
+.speaker-preevent article{
     max-width: 30vw;
     gap: 30px;
 }
 
-.sub-header-preevent article h1{
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 70px;
+.speaker-preevent article h1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    color: #706784;
+}
+.speaker-preevent p{
+    text-align: justify;
+}
+
+.speaker-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speaker-card p{
+    width: 259px;
+    text-align: center;
+}
+
+.speaker-name{
     color: #FECC50;
+    font-weight: normal;
 }
 
 .talkshow{
@@ -108,11 +128,6 @@
     height: 200px;
     background-color: #C4C4C4;
 }
-
-.speaker-card p{
-    width: 199px;
-}
-
 /* Useless */
 .gap-preevent2{
     height: 300px;

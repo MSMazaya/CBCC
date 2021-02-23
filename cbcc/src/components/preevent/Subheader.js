@@ -1,12 +1,16 @@
 import React from 'react'
 
-const Subheader = () => {
+const Subheader = ({nama,posisi,judul,deskripsi}) => {
     return (
-        <div className="sub-header-preevent">
-            <div className="circle talkshow"></div>
+        <div className="speaker-preevent">
+            <div className="speaker-card">
+                    <div className="speaker circle"></div>
+                    <h1 className="sub-title speaker-name">{nama}</h1>
+                    <p>{posisi}</p>
+                </div>
             <article className="flex-col">
-                <h1>Pre-Event Talkshow</h1>
-                <p>Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body </p>
+                <h1>{judul}</h1>
+                <p>{deskripsi}</p>
             </article>
         </div>
     )

@@ -115,6 +115,10 @@ sama tambah class buat positioningnya
   background: #4A415F;
 }
 
+.pointer:hover{
+  cursor: pointer;
+}
+
 .pointer:after {
   content: "";
   position: absolute;
@@ -209,6 +213,16 @@ nav.active{
   background-color: white;
   box-shadow: 5px 5px 7px grey;
   border-bottom: solid 4px #4A415F;
+}
+
+nav.active-competition{
+  background-color: white;
+  box-shadow: 5px 5px 7px grey;
+  border-bottom: solid 4px #4A415F;
+}
+
+nav.nav-competition {
+  color: white;
 }
 
 nav img{
