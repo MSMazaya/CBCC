@@ -8,8 +8,8 @@ import Speaker from './preevent/Speaker.js'
 const Preevent = () => {
     return (
         <motion.div
-        exit={{opacity:0,y:1000}}
-        transition={{duration:1}}
+        exit={{opacity:0}}
+        transition={{duration:0.5}}
         >
             <Header/>
             <Subheader/>
