@@ -22,7 +22,7 @@ const Subheader = () => {
     }, [controls,inView])
 
     return (
-        <div className="subheader">
+        <div className="subheader compe">
             <div className="subheader-item" style={{
                 display:"flex",
                 flexDirection:"column",
