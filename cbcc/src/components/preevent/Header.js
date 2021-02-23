@@ -24,6 +24,16 @@ const Header = () => {
             duration:1    
         }}
         className="pre-event-header">
+            <div className="elips3 bg-decoration subheader-dekorasi2" style={{position: "absolute",
+                    left: "-120px",
+                    top: "400px"}}></div>
+             <div className="elips2 bg-decoration subheader-dekorasi2" style={{left: "1150px",
+                    top: "70px"}}></div>
+            <img src="element.png" alt="logo" style={{position: "absolute",
+                    width: "300px",
+                    height: "300px",
+                    left: "0px",
+                    top: "300px"}}/>
             <div className="header-part-1">
                 <h1 >Pre-event</h1>
                 <motion.a

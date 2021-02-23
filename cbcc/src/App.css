@@ -112,7 +112,7 @@ sama tambah class buat positioningnya
   width: 200px;
   height: 50px;
   position: relative;
-  background: #4A415F;
+  background: linear-gradient(90deg, #4A415F 0%, rgba(74, 65, 95, 0) 272.61%);
 }
 
 .pointer:hover{
@@ -138,11 +138,12 @@ sama tambah class buat positioningnya
   bottom: 0;
   width: 0;
   height: 0;
-  border-left: 20px solid #4A415F;
+  border-left: 20px solid #9691A0;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
 }
-  
+
+
 
 .x1{
   position: absolute;

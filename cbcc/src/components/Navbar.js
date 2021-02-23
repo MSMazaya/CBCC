@@ -51,10 +51,8 @@ const Navbar = ({location}) => {
                         <li>
                         {location.pathname === "/" ?
                         <a onClick={()=>scroll(1100)}>Events</a> :
-                        <a onClick={()=>scroll(785)}>Events</a>
-                        
-                        }
-                            
+                        <a onClick={()=>scroll(705)}>Events</a>
+                    }
                             </li>
                         <li classname="register"><a href="">Register Now</a></li>
                     </ul>

@@ -6,6 +6,28 @@ const Header = () => {
         <div
         style={{backgroundImage: `url("competition-bg.png")`, backgroundSize: '100%'}}
         className="competition-header">
+            <img src="element.png" alt="logo" style={{position: "absolute",
+                    width: "300px",
+                    height: "300px",
+                    left: "-10px",
+                    top: "170px"}}/>
+               <img src="element.png" alt="logo" style={{position: "absolute",
+                    width: "200px",
+                    height: "200px",
+                    left: "-10px",
+                    top: "360px"}}/>
+                <img src="element.png" alt="logo" style={{position: "absolute",
+                    rotate:"180deg",
+                    width: "300px",
+                    height: "300px",
+                    left: "1000px",
+                    top: "0px"}}/>
+                <img src="element.png" alt="logo" style={{position: "absolute",
+                    rotate:"180deg",
+                    width: "200px",
+                    height: "200px",
+                    left: "1100px",
+                    top: "170px"}}/>
             <div className="title-button-wrapper flex-col">
                 <h1>Business Case <br/> Competition</h1>
                 <div className="flex-row btn-wrapper">
