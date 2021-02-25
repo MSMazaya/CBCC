@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 const Navbar = ({location}) => {
     const [Navbar, setNavbar] = useState(false)
-
+    const [mobile, setMobile] = useState(false)
     const changeBackground = () => {
         if(window.scrollY >= 12){
             setNavbar(true)
@@ -16,7 +16,21 @@ const Navbar = ({location}) => {
     }
 
     window.addEventListener('scroll',changeBackground)
+    window.addEventListener('resize',()=>{
+        var w = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
 
+        var h = window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;
+
+        if (w<320){
+            setMobile(true)
+        } else{
+            setMobile(false)
+        }
+    });
     const scroll =  (amountToScroll)=>{
         //amount to scroll is negative to scroll up
         window.scrollTo(0 , amountToScroll)
@@ -58,9 +72,9 @@ const Navbar = ({location}) => {
                         <li classname="register"><a href="">Register Now</a></li>
                     </ul>
                 </div>
-                <Link to='/'>
+                {mobile && <Link to='/'>
                 <img className="mobile" src="logo.png" alt="logo"/>  
-                </Link>  
+                </Link>}  
             </motion.nav>
         </div>
     )

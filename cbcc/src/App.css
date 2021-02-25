@@ -45,6 +45,10 @@ sama tambah class buat positioningnya
   display: none;
 }
 
+.no-mobile{
+  display: none;
+}
+
 .flex-row{
   display: flex;
   flex-direction: row;
