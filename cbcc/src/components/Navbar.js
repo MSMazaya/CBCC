@@ -38,7 +38,7 @@ const Navbar = ({location}) => {
 
     return (
         <div>
-            <motion.nav className={Navbar ? (location.pathname === '/competition' ? "active-competition" : "active") : (location.pathname === '/competition' ? "nav-competition" : "") }
+            <motion.nav className={ mobile ? 'active-competition' : (Navbar ? (location.pathname === '/competition' ? "active-competition" : "active") : (location.pathname === '/competition' ? "nav-competition" : ""))}
                 initial={{
                     y:-1000,
                 }}
@@ -53,7 +53,7 @@ const Navbar = ({location}) => {
             >
                 <Link to='/'>
                 <img className="no-mobile" src="logo.png" alt="logo"/>  
-                <img src="nav-drop.png" alt="nav-drop"/>
+                <img className="mobile" src="nav-drop.png" alt="nav-drop"/>
                 </Link>
                 <div className="navbar">
                     <ul className="nav-items">
