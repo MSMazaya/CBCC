@@ -20,13 +20,13 @@ const Header = () => {
                     rotate:"180deg",
                     width: "300px",
                     height: "300px",
-                    left: "1000px",
+                    left: "1050px",
                     top: "0px"}}/>
                 <img src="element.png" alt="logo" style={{position: "absolute",
                     rotate:"180deg",
                     width: "200px",
                     height: "200px",
-                    left: "1100px",
+                    left: "1150px",
                     top: "170px"}}/>
             <div className="title-button-wrapper flex-col">
                 <h1>Business Case <br/> Competition</h1>

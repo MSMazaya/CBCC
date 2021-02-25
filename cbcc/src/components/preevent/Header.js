@@ -27,8 +27,10 @@ const Header = () => {
             <div className="elips3 bg-decoration subheader-dekorasi2" style={{position: "absolute",
                     left: "-120px",
                     top: "400px"}}></div>
-             <div className="elips2 bg-decoration subheader-dekorasi2" style={{left: "1150px",
-                    top: "70px"}}></div>
+             <div className="elips2 bg-decoration subheader-dekorasi2" style={{
+                    position:"relative",
+                    left: "1120px",
+                    top: "-70px"}}></div>
             <img src="element.png" alt="logo" style={{position: "absolute",
                     width: "300px",
                     height: "300px",
@@ -38,7 +40,7 @@ const Header = () => {
                 <h1 >Pre-event</h1>
                 <motion.a
                 whileHover={{scale:1.1}}
-                onClick={()=>scroll(1230)}>Timeline</motion.a>
+                onClick={()=>scroll(705)}>Timeline</motion.a>
             </div>
             <div className="description">
                 <p>CBCC Talks will be delivered by 3 speakers in one frame. They will share their stories and followed by tips and tricks on how to attain excellent academic and non-academic achievements to the audience. The speakers’ high influencing skills are expected to augment the promotion and attractiveness of the CBCC 2021 among Indonesian undergraduate students across the globe. While this talk show is promoting CBCC’s main event, it also gives benefits to the audience. These benefits are expected to make the audience to become more eager in participating in the main event.</p>
