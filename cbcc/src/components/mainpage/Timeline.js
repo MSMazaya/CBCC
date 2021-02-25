@@ -11,14 +11,14 @@ const Timeline = () => {
                 <a className={timelineTypes ? "" : "picked"} onClick={()=>setTimelineTypes(false)}>Business Case Competition</a>
             </div>
             <div className="gap"></div>
-            <div className='flex-col'>
+            <div className='tl-wrapper'>
                 <AnimatePresence>
                 <div className="line"></div>
                 {timelineTypes ? 
                 <motion.div 
                 intial={{y:0,opacity:1}}
                 exit={{y:10,opacity:0}}
-                className="timeline-container flex-row"> 
+                className="timeline-container"> 
                 <div className="circle tl">
                     <div className="text">
                     <a className="tgl">5 Februari</a>
@@ -44,7 +44,7 @@ const Timeline = () => {
             :
             <motion.div
             exit={{y:10,opacity:0}}
-            className="timeline-container flex-row">
+            className="timeline-container">
                 <div className="circle tl">
                 <div className="text">
                 <a className="tgl3">1 Maret</a>

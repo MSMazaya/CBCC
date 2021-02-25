@@ -41,6 +41,10 @@ sama tambah class buat positioningnya
  ps: bg-decoration harus ditambahin, dan decoration harus di wrap sama .cover
 */
 
+.mobile{
+  display: none;
+}
+
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -548,6 +552,11 @@ header{
   height: 100px;
 }
 
+.tl-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
 .judul a{
   font-family: Kollektif;
   font-size: 25px;
@@ -588,6 +597,8 @@ header{
 }
 
 .timeline-container{
+  display: flex;
+  flex-direction: row;
   width: 70vw;
   justify-content: space-between;
 }
@@ -952,3 +963,187 @@ footer p{
 footer .icons img:Hover{
     cursor: pointer;
 }
+
+
+
+@media (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  p{
+    font-size: 16px;
+  }
+  .navbar{
+    display: none;
+  }
+  .mobile{
+    display: inline;
+  }
+  .no-mobile{
+    display: none;
+  }
+  nav{
+    padding: 10px;
+  }
+  nav img {
+    max-height: 40px;
+  }
+  nav img[alt="nav-drop"]{
+    width: 25px;
+  }
+  .hero img {
+    padding: 0;
+    width: 250px;
+    height: 111px;
+  }
+  .kolab a{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 40px;
+  }
+  .headline li {
+    width: 100px;
+    height: 45px;
+    background: #FECC50;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    box-shadow: 1px 1px 1px grey;
+  }
+  .headline li a{
+    font-size: medium;
+  }
+  .judul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-event img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60%;
+    width: 60%;
+    z-index: 0;
+  }
+  .card-event {
+    text-align: center;
+    width: 393px;
+    height: auto;
+    padding: 0;
+    position: relative;
+  }
+  .card-inside{
+    font-size: 10px;
+  }
+  .inside {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    gap: 10px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+  }
+  .inside h1{
+    font-size:20px
+  }
+  .sub-title{
+    text-align: center;
+  }
+  .subheader-item{
+    margin-top: 300px;
+  }
+  .subheader-item2{
+    margin-bottom: 350px;
+  }
+  .subheader-item2 h1 {
+    line-height: 50px;
+    color: #FECC50;
+    font-weight: 400;
+    font-size: 96px;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  .subheader p{
+    width: 270px;
+  }
+  .tl-wraper{
+    flex-direction: column;
+  }
+  .line{
+    left: 49%;
+    width: 7px;
+    height: 150vw;
+  }
+  .timeline-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 160vw;
+  }
+  .timeline{
+    margin-bottom: 200px;
+  }
+  .events{
+    margin-bottom: 100px;
+  }
+}
+@media (max-width:480px)  { 
+  .cover{
+    display: none;
+  }
+  .wrapper{
+    width: 90%;
+  }
+  .question{
+    width: 100%;
+  }
+  
+}
+@media (max-width:600px)  {
+   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .logo-sponsor{
+    flex-direction: column;
+  }
+  }
+@media (max-width:801px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .grid-container{
+    grid-template-columns: auto;
+  }
+}
+@media (max-width:1025px) {
+  .headline ul{
+    margin-left: 0px;
+    gap: 20px;
+  }
+  .hero-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .subheader{
+    height: 150vh;
+  }
+  .subheader h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .subheader-item{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .subheader-item2{
+    display: flex;
+    flex-direction: column;
+  }
+  .x1{
+    display: none;
+  }
+  .x2{
+    display: none;
+  }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

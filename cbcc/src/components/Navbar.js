@@ -38,7 +38,8 @@ const Navbar = ({location}) => {
                 }}
             >
                 <Link to='/'>
-                <img src="logo.png" alt="logo"/>  
+                <img className="no-mobile" src="logo.png" alt="logo"/>  
+                <img src="nav-drop.png" alt="nav-drop"/>
                 </Link>
                 <div className="navbar">
                     <ul className="nav-items">
@@ -57,8 +58,10 @@ const Navbar = ({location}) => {
                         <li classname="register"><a href="">Register Now</a></li>
                     </ul>
                 </div>
+                <Link to='/'>
+                <img className="mobile" src="logo.png" alt="logo"/>  
+                </Link>  
             </motion.nav>
-            
         </div>
     )
 }
