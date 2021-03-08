@@ -21,23 +21,37 @@ const Timeline = () => {
                 className="timeline-container"> 
                 <div className="circle tl">
                     <div className="text">
-                    <a className="tgl">5 Februari</a>
-                    <a className="live">Live IG</a>
+                    <a className="tgl">5 Februari 2021</a>
+                    <a className="live">Live IG I</a>
                     <a className="title">“Introduction of Collegacy Bandung and CBCC”</a>
                     </div>
                 </div>
                 <div className="circle tl">
                 <div className="text">
-                    <a className="tgl">20 Februari</a>
-                    <a className="live">Live IG</a>
-                    <a className="title">“Break Your Limit ”</a>
+                    <a className="tgl" style={{top: "-50px"}}>20 Februari 2021</a>
+                    <a className="live" style={{top: "-85px"}}>Live IG II</a>
+                    <a className="title" style={{top: "-100px"}}>“Break Your Limit ”</a>
                 </div>
                 </div>
                 <div className="circle tl">
                 <div className="text">
-                    <a className="tgl2">20 Maret</a>
-                    <a className="live2">Live IG</a>
-                    <a className="title2">“Outstanding Students 101”</a>
+                    <a className="tgl2">3 April 2021</a>
+                    <a className="live2" style={{left: "-100px"}}>Instagram TakeOver</a>
+                    <a className="title2" style={{left: "-145px", textAlign:"center"}}>“How to Build Personal Branding in the Digital Era”</a>
+                </div>
+                </div>
+                <div className="circle tl">
+                <div className="text">
+                    <a className="tgl2" style={{top: "-50px"}}>17 April 2021</a>
+                    <a className="live2" style={{top: "-85px", left: "-80px"}}>CBCC ClubHouse I</a>
+                    <a className="title2" style={{top: "-130px",left:"-160px",width:"350px", textAlign:"center"}}>“Outstanding Students 101: How to Become the Next Outstanding Student”</a>
+                </div>
+                </div>
+                <div className="circle tl">
+                <div className="text">
+                    <a className="tgl2" style={{left: "-50px"}}>2 Mei 2021</a>
+                    <a className="live2" style={{left: "-70px"}}>CBCC ClubHouse II</a>
+                    <a className="title2" style={{left: "0px"}}>TBA</a>
                 </div>
                 </div>
             </motion.div>

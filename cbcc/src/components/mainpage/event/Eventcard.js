@@ -52,7 +52,7 @@ const Eventcard = ({x,nama,link}) => {
                         transition={{duration:0.25}}
                         variants={cardVariant}
                         className="card-inside">
-                            <img src="contoh.jpg" alt="contoh"/>
+                            <img src="pre.png" alt="contoh"/>
                         </motion.div>
                         <motion.div 
                         initial='hidden'

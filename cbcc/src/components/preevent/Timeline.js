@@ -6,19 +6,19 @@ const timelineGroup = [
         nama:"Rifka Novriani",
         posisi:"Project Officer at Collegacy Business Case Competition",
         judul:"“Introduction of Collegacy Bandung and CBCC”",
-        deskripsi:"Live IG 1 will introduce the Collegacy Bandung and the Collegacy Business Case Competition 2021, so that our followers get to know us and our events more. We want to get their trust and encourage them to register as participants later."
+        deskripsi:"Bersama Project Officer dari acara ini, kami memperkenalkan Collegacy Bandung dan Collegacy Business Case Competition 2021 kepada publik, khususnya pengikut Instagram kami."
     },
     {
         nama:"Tarreq Kemal", // Al idrusnya nyusul wkwk soalnya gak tau cara parse enter lewat string ke react component
         posisi:"Chief Executive Officer at Akademis.id",
         judul:"“Break Your Limit”",
-        deskripsi:" Live IG II will be presented by an undergraduate student as a speaker. He will share his story about his extraordinary accomplishments associated with breaking his own limit along the way. The purpose of Live Ig II is to motivate the audience, especially undergraduate students, to take part in the CBCC 2021."
+        deskripsi:"Mengangkat mahasiswa sebagai pembicara, kami ingin memberikan wawasan kepada penonton terkait cara mengontrol dan keluar dari limit yang ada dalam mengejar apa yang diimpikan."
     },
     {
         nama:"Secret Speaker",
         posisi: "Coming soon",
-        judul:"“Outstanding Students 101”",
-        deskripsi:"Coming soon"
+        judul:"“How to Build Personal Branding in the Digital Era1”",
+        deskripsi:"Personal branding adalah salah satu kunci kesuksesan seseorang. Menyadari akan pentingnya personal branding baik di dunia kampus maupun kerja, kami mempersembahkan Instagram TakeOver yang akan mengupas seputar personal branding dari pembicara yang inspiratif dan berpengalaman.n"
     }
 ]
 const Timeline = () => {
