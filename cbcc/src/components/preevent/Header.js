@@ -29,7 +29,7 @@ const Header = () => {
                     top: "400px"}}></div>
              <div className="elips2 bg-decoration subheader-dekorasi2" style={{
                     position:"relative",
-                    left: "1120px",
+                    left: "1180px",
                     top: "-70px"}}></div>
             <img src="element.png" alt="logo" style={{position: "absolute",
                     width: "300px",
@@ -37,7 +37,7 @@ const Header = () => {
                     left: "0px",
                     top: "300px"}}/>
             <div className="header-part-1">
-                <h1 >Pre-event</h1>
+                <h1>Pre-event</h1>
                 <motion.a
                 whileHover={{scale:1.1}}
                 onClick={()=>scroll(705)}>Timeline</motion.a>

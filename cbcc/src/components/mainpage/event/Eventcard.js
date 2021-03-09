@@ -59,7 +59,7 @@ const Eventcard = ({x,nama,link,picture}) => {
                         animate={controlinside}
                         transition={{duration:0.25}}
                         variants={insideVariant}
-                        className="inside">
+                        className="inside" style={{left:"107px"}}>
                             <h1>{nama}</h1>
                             <motion.div
                             onMouseOver={() => controlbutton.start('visible')}
