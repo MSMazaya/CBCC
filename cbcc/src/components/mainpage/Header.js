@@ -40,7 +40,7 @@ const Header = () => {
                                     scale:1.1,
                                 }
                             }}
-                        ><a className="tentang" onClick={()=>scroll(650)}>About Us</a></motion.li>
+                        ><a className="tentang" onClick={()=>scroll(600)}>About Us</a></motion.li>
                         <motion.li
                             whileHover="hover"
                             variants={{

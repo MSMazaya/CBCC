@@ -10,7 +10,7 @@ const eventVariants = {
 
 const events = [
     {x:1,nama:"Pre-Event",link:"/preevent",picture:'pre.png'},
-    {x:2,nama:"Competitions",link:"/competition",picture:'pre.png'},
+    {x:2,nama:"Competitions",link:"/competition",picture:'main.png'},
 ]
 
 const Events = ({myref}) => {
