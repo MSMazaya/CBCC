@@ -21,7 +21,7 @@ const buttonVariant = {
     hidden: {backgroundColor:'transparent',color:'white'},
 }
 
-const Eventcard = ({x,nama,link}) => {
+const Eventcard = ({x,nama,link,picture}) => {
     const controls = useAnimation();
     const controlinside = useAnimation();
     const controlbutton = useAnimation();
@@ -52,7 +52,7 @@ const Eventcard = ({x,nama,link}) => {
                         transition={{duration:0.25}}
                         variants={cardVariant}
                         className="card-inside">
-                            <img src="pre.png" alt="contoh"/>
+                            <img src={picture} alt="contoh"/>
                         </motion.div>
                         <motion.div 
                         initial='hidden'

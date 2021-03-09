@@ -9,8 +9,8 @@ const eventVariants = {
 }
 
 const events = [
-    {x:1,nama:"Pre-Event",link:"/preevent"},
-    {x:2,nama:"Competitions",link:"/competition"},
+    {x:1,nama:"Pre-Event",link:"/preevent",picture:'pre.png'},
+    {x:2,nama:"Competitions",link:"/competition",picture:'pre.png'},
 ]
 
 const Events = ({myref}) => {
@@ -42,8 +42,8 @@ const Events = ({myref}) => {
             transtion={{duration:2}}
             variants={eventVariants}
             className="grid-container">
-                { events.map(({x,nama,link}) => {
-                    return <Eventcard x={x} nama={nama} link={link}/>
+                { events.map(({x,nama,link,picture}) => {
+                    return <Eventcard x={x} nama={nama} link={link} picture={picture}/>
                 })}
             </motion.div>
         </div>
