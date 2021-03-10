@@ -989,15 +989,17 @@ footer .icons img:Hover{
   nav img[alt="nav-drop"]{
     width: 25px;
   }
-  .hero img {
-    padding: 0;
-    width: 250px;
-    height: 111px;
+  header{
+    height: 90vh;
+  }
+  .hero img{
+    width: 93vw;
+    height: 25vh;
   }
   .kolab a{
     font-size: 20px;
     text-align: center;
-    margin-left: 40px;
+    margin-left: 56px;
   }
   .headline li {
     width: 100px;
