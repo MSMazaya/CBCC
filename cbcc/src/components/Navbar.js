@@ -65,7 +65,7 @@ const Navbar = ({location}) => {
                         </li>
                         <li>
                         {location.pathname === "/" ?
-                        <a onClick={()=>scroll(1200)}>Events</a> :
+                        <a onClick={()=>scroll(1130)}>Events</a> :
                         <a onClick={()=>scroll(705)}>Events</a>
                     }
                             </li>

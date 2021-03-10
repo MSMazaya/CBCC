@@ -22,7 +22,7 @@ const Timeline = () => {
                             </div>
                         <div className="pointer">
                         <div className="temlen">
-                    <a className="tanggal2">27 March</a>
+                    <a className="tanggal2">27 March 2021</a>
                     <a className="jdl4" style={{
                         lineHeight:"16px",
                         fontSize:"18px",
@@ -31,7 +31,7 @@ const Timeline = () => {
                             </div>
                         <div className="pointer">
                         <div className="temlen">
-                    <a className="tanggal2">1 April</a>
+                    <a className="tanggal2">1 April 2021</a>
                     <a className="jdl3"> Case Distribution</a>
                     </div>
                             </div>
@@ -45,7 +45,7 @@ const Timeline = () => {
                         </div>
                         <div className="pointer">
                         <div className="temlen">
-                            <a className="tanggal2">23 April</a>
+                            <a className="tanggal2">23 April 2021</a>
                             <a className="jdl3">60 Semifinalist Announcement</a>
                         </div>
                             </div>
@@ -57,22 +57,22 @@ const Timeline = () => {
             <div className='flex-row pointer-wrapper'>           
                 <div className="pointer">
                 <div className="temlen">
-                <a className="tanggal2">24 April</a>
+                <a className="tanggal2">24 April 2021</a>
                 <a className="jdl3">Workshop “How to make <br/> a proper pitchdeck”</a>
                     </div>
                 </div>
                 <div className="pointer"><div className="temlen">
-                            <a className="tanggal2">30  April</a>
+                            <a className="tanggal2">30  April 2021</a>
                             <a className="jdl4">Essay Submission</a>
                             </div>
                         </div>
                 <div className="pointer"><div className="temlen">
-                <a className="tanggal2">1 Mei</a>
+                <a className="tanggal2">1 Mei 2021</a>
                 <a className="jdl3">Pitching day & <br/> Top 5 Anouncement</a>
                     </div>
                 </div>
                 <div className="pointer"><div className="temlen">
-                            <a className="tanggal2">2 Mei</a>
+                            <a className="tanggal2">2 Mei 2021</a>
                             <a className="jdl4">Awarding Day</a>
                             </div>
                         </div>

@@ -33,7 +33,7 @@ const Subheader = () => {
                 left:"25%"
             }}>
                 <h1 style={{fontSize:"50px", marginTop:"110px"}}>Business Case <br/> Competition</h1>
-                <p>Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body </p>
+                <p>Collegacy Business Case Competition adalah acara kompetisi tahunan yang diadakan oleh Collegacy Bandung dengan tujuan untuk membuat platform untuk mahasiswa Indonesia berkolaborasi dan menyelesaikan masalah bisnis yang nyata.</p>
             </div>
             <div className="subheader-item">
                 <motion.p

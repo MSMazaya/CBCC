@@ -778,7 +778,7 @@ header{
   font-weight: 300;
   font-size: 18px;
   text-align: center;
-  line-height: 15px;
+  line-height: 18px;
   color: #000000;
 }
 
@@ -802,7 +802,7 @@ header{
   font-weight: 300;
   font-size: 18px;
   text-align: center;
-  line-height: 15px;
+  line-height: 18px;
   color: #000000;
 }
 
@@ -1169,4 +1169,7 @@ footer .icons img:Hover{
     display: none;
   }
 }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */  }
+
+
+

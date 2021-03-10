@@ -61,50 +61,50 @@ const Timeline = () => {
             className="timeline-container">
                 <div className="circle tl">
                 <div className="text">
-                <a className="tgl3">1 Maret</a>
-                <a className="title3">Open Registration </a>
+                <a className="tgl3" style={{left:"-70px", width:"190px",textAlign:"center"}}>25 April-15 Mei 2021</a>
+                <a className="title3" style={{top:"100px", left:"-60px"}}>Open Registration </a>
                 </div>
                 </div>
                 <div className="circle tl">
                 <div className="text">
-                <a className="tgl4">27 Maret</a>
-                <a className="title4">Workshop</a>
+                <a className="tgl4" style={{left:"-70px"}}>19-31 Mei 2021</a>
+                <a className="title4" style={{left:"-70px",width:"200px",textAlign:"center",top:"-100px"}}>Individual Preliminary Challenge</a>
                 </div>
                 </div>                
                 <div className="circle tl">
                 <div className="text">
-                <a className="tgl3">1 April </a>
-                <a className="title3">Case Contributor</a>
+                <a className="tgl3" style={{left:"-70px"}}>22 Mei 2021</a>
+                <a className="title3" style={{left:"-80px", width:"190px",textAlign:"center"}}>Workshop “How to Design Your Way of Thinking”</a>
                 </div>
                 </div>                
                 <div className="circle tl">
                 <div className="text">
-                <a className="tgl5">7 April </a>
-                <a className="title5">Close Regisration</a>
+                <a className="tgl5" style={{left:"-70px"}}>11 Juni 2021</a>
+                <a className="title5" style={{left:"-140px",textAlign:"center",top:"-85px",lineHeight:"18px"}}>Top 60 Semifinalist Announcement</a>
                 </div>
                 </div>                
                 <div className="circle tl">
                 <div className="text">
-                <a className="tgl3">6-13 April</a>
-                <a className="title7">Individual Preliminary Challenge</a>
+                <a className="tgl3" style={{left:"-70px"}}>12 Juni 2021</a>
+                <a className="title7"style={{left:"-100px",top:"75px"}}>Technical Meeting & Workshop</a>
                 </div>
                 </div>               
                 <div className="circle tl">
                 <div className="text">
-                <a className="tgl6">24 April</a>
-                <a className="title6"> “How to Make a Proper Pitch Deck”</a>
+                <a className="tgl6" style={{left:"-70px",width:"300px"}}>13-20 Juni 2021</a>
+                <a className="title6" style={{top:"-80px"}}>CBCC Collaboration Challenge</a>
                 </div>
                 </div>
                 <div className="circle tl">
                 <div className="text">
-                <a className="tgl7">1 Mei</a>
-                <a className="title7">Semifinal pitch deck presentation</a>
+                <a className="tgl7" style={{left:"-65px"}}>19 Juni 2021</a>
+                <a className="title7" style={{left:"-100px",top:"75px"}}>Semifinal pitch deck presentation</a>
                 </div>
                 </div>
                 <div className="circle tl">
                 <div className="text">
-                <a className="tgl6">2 Mei</a>
-                <a className="title6">Final pitch deck presentation & Awarding night</a>
+                <a className="tgl6" style={{left:"-55px"}}>20 Juni 2021</a>
+                <a className="title6" style={{left:"-100px",top:"-80px"}}>Final pitch deck presentation & Awarding night</a>
                 </div>
                 </div>
             </motion.div>
