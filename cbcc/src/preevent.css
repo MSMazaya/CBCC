@@ -268,11 +268,17 @@
     .speaker-preevent p{
         text-align: center;
     }
-    
 }
 @media (max-width:1036px)  {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
     .pre-event-header{
         flex-direction: column;
+    }
+    .description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 0px;
     }
    }

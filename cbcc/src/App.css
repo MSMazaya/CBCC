@@ -849,10 +849,11 @@ header{
 }
 
 .answer{
+  font-weight: bold;
+  padding: 1vw;
   width: 55vw;
-  height: 277px;
+  height: auto;
   border: 9px solid #4A415F;
-  border-radius: 10px;
 }
 
 
@@ -1103,6 +1104,10 @@ footer .icons img:Hover{
   .question{
     width: 100%;
   }
+  .answer{
+    width: 100%;
+    height: auto;
+  }
   
 }
 @media (max-width:600px)  {
@@ -1135,10 +1140,6 @@ footer .icons img:Hover{
     font-size: 40px;
     text-align: center;
     font-weight: 600;
-  }
-  .answer{
-    width: 90vw;
-    height: 200px;
   }
   .subheader-item{
     display: flex;
