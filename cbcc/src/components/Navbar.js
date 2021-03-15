@@ -2,10 +2,12 @@ import React from 'react'
 import {useState} from 'react'
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
+import {ReactComponent as DropdownButton} from '.././nav-dropdown.svg'
 
 const Navbar = ({location}) => {
     const [Navbar, setNavbar] = useState(false)
     const [mobile, setMobile] = useState(false)
+    const [NavMob, setNavMob] = useState(false)
     const changeBackground = () => {
         if(window.scrollY >= 12){
             setNavbar(true)
@@ -25,7 +27,7 @@ const Navbar = ({location}) => {
         || document.documentElement.clientHeight
         || document.body.clientHeight;
 
-        if (w<320){
+        if (w<360){
             setMobile(true)
         } else{
             setMobile(false)
@@ -38,6 +40,14 @@ const Navbar = ({location}) => {
 
     return (
         <div>
+            {NavMob && 
+                <div className="nav-mobile mobile flex-col">
+                    <div className="x1"></div>
+                    <h2>Home</h2>
+                    <h2>Event</h2>
+                    <h2>Register</h2>
+                </div>
+            }
             <motion.nav className={ mobile ? 'active-competition' : (Navbar ? (location.pathname === '/competition' ? "active-competition" : "active") : (location.pathname === '/competition' ? "nav-competition" : ""))}
                 initial={{
                     y:-1000,
@@ -51,10 +61,14 @@ const Navbar = ({location}) => {
                     damping:14,
                 }}
             >
+                {mobile 
+                ?
+                <DropdownButton onClick={()=>setNavMob(!NavMob)} className="mobile"/>
+                :
                 <Link to='/'>
                 <img className="no-mobile" src="logo.png" alt="logo"/>  
-                <img className="mobile" src="nav-drop.png" alt="nav-drop"/>
-                </Link>
+                </Link> 
+                }
                 <div className="navbar">
                     <ul className="nav-items">
                         <li>
