@@ -6,31 +6,36 @@ const timelineGroup = [
         nama:"Rifka Novriani",
         posisi:"Project Officer at Collegacy Business Case Competition",
         judul:"“Introduction of Collegacy Bandung and CBCC”",
-        deskripsi:"Bersama Project Officer dari acara ini, kami memperkenalkan Collegacy Bandung dan Collegacy Business Case Competition 2021 kepada publik, khususnya pengikut Instagram kami."
+        deskripsi:"Bersama Project Officer dari acara ini, kami memperkenalkan Collegacy Bandung dan Collegacy Business Case Competition 2021 kepada publik, khususnya pengikut Instagram kami.",
+        gambar:"Rifka.png"
     },
     {
         nama:"Tarreq Kemal", // Al idrusnya nyusul wkwk soalnya gak tau cara parse enter lewat string ke react component
         posisi:"Chief Executive Officer at Akademis.id",
         judul:"“Break Your Limit”",
-        deskripsi:"Mengangkat mahasiswa sebagai pembicara, kami ingin memberikan wawasan kepada penonton terkait cara mengontrol dan keluar dari limit yang ada dalam mengejar apa yang diimpikan."
+        deskripsi:"Mengangkat mahasiswa sebagai pembicara, kami ingin memberikan wawasan kepada penonton terkait cara mengontrol dan keluar dari limit yang ada dalam mengejar apa yang diimpikan.",
+        gambar:"Tareq.jpg"
     },
     {
         nama:"Secret Speaker",
         posisi: "Coming soon",
-        judul:"“How to Build Personal Branding in the Digital Era1”",
-        deskripsi:"Personal branding adalah salah satu kunci kesuksesan seseorang. Menyadari akan pentingnya personal branding baik di dunia kampus maupun kerja, kami mempersembahkan Instagram TakeOver yang akan mengupas seputar personal branding dari pembicara yang inspiratif dan berpengalaman."
+        judul:"“How to Build Personal Branding in the Digital Era 1”",
+        deskripsi:"Personal branding adalah salah satu kunci kesuksesan seseorang. Menyadari akan pentingnya personal branding baik di dunia kampus maupun kerja, kami mempersembahkan Instagram TakeOver yang akan mengupas seputar personal branding dari pembicara yang inspiratif dan berpengalaman.",
+        gambar:"cs.png"
     },
     {
         nama:"To Be Announced",
         posisi: "Coming soon",
         judul:"CBCC ClubHouse I",
-        deskripsi:"Coming soon."
+        deskripsi:"Coming soon.",
+        gambar:"cs.png"
     },
     {
         nama:"To Be Announced",
         posisi: "Coming soon",
         judul:"CBCC ClubHouse II",
-        deskripsi:"Coming soon."
+        deskripsi:"Coming soon.",
+        gambar:"cs.png"
     }
 ]
 const Timeline = () => {
@@ -76,7 +81,7 @@ const Timeline = () => {
                     </div>
                 </div>
             </div>
-            <Subheader nama={timelineGroup[group].nama} posisi={timelineGroup[group].posisi} judul={timelineGroup[group].judul} deskripsi={timelineGroup[group].deskripsi} />
+            <Subheader nama={timelineGroup[group].nama} posisi={timelineGroup[group].posisi} judul={timelineGroup[group].judul} deskripsi={timelineGroup[group].deskripsi} gambar={timelineGroup[group].gambar} />
         </div>
     )
 }
