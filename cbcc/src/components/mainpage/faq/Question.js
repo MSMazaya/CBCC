@@ -13,7 +13,7 @@ const Question = ({question,answer}) => {
     const ref = useRef(null)
     return (
         <div>
-            <div className={dropdown ? "question-wrapper active" : "question-wrapper"}
+            <div className="question-wrapper"
             >
                 <div className="question">  
                     <h1>{question}</h1>
@@ -36,10 +36,8 @@ const Question = ({question,answer}) => {
                     transition={{duration:.25}}
                     src="dropdown.png" alt="dropdown"/>
                 </div>
-                <div className="answer">
-                    <p>{answer}</p>
-                </div>
-                    {/* <AnimatePresence>
+            </div>
+                <AnimatePresence>
                     {dropdown && 
                             <motion.div
                             initial={{y:-50,opacity:0}}
@@ -50,8 +48,8 @@ const Question = ({question,answer}) => {
                                 <p>{answer}</p>
                             </motion.div>
                     }
-                    </AnimatePresence> */}
-            </div>
+                    </AnimatePresence>
+                    
         </div>
     )
 }

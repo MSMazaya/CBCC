@@ -598,7 +598,7 @@ header{
 .timeline-container{
   display: flex;
   flex-direction: row;
-  width: 70vw;
+  width: 84vw;
   justify-content: space-between;
 }
 
@@ -609,6 +609,34 @@ header{
   width: 40px;
   height: 40px;
   background: #FECC50;
+}
+
+.tl-items{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tl-genap{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #FECC50;
+  margin-top: 3px;
+}
+
+.tl-date{
+  font-weight: 800;
+}
+
+.tl-items-genap{
+  position: relative; 
+  top: -9.25rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
 }
 
 .circle:hover{
@@ -821,22 +849,20 @@ header{
 }
 
 .question-wrapper{
+  position: relative;
   background: linear-gradient(90deg, #4A415F 0%, rgba(74, 65, 95, 0) 272.61%);
   border-radius: 8px;
   max-height: 63px;
   overflow: hidden;
   transition: max-height 0.5s cubic-bezier(1,.01,1,1.34);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: white;
+  z-index: 100;
 }
 
-.question-wrapper.active{
-  max-height: 200px;
-  transition: max-height 0.5s;
-}
 
 .question{
   position: relative;
-  z-index: 100;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -864,6 +890,8 @@ header{
   padding: 1vw;
   width: 55vw;
   height: auto;
+  border-radius: 3px;
+  border: #4A415F solid 3px;
 }
 
 
