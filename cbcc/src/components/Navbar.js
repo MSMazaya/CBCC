@@ -27,7 +27,7 @@ const Navbar = ({location}) => {
         || document.documentElement.clientHeight
         || document.body.clientHeight;
 
-        if (w<360){
+        if (w<550){
             setMobile(true)
         } else{
             setMobile(false)
@@ -40,15 +40,15 @@ const Navbar = ({location}) => {
 
     return (
         <div>
-            {NavMob && 
+            {/* {NavMob && 
                 <div className="nav-mobile mobile flex-col">
                     <div className="x1"></div>
                     <h2>Home</h2>
                     <h2>Event</h2>
                     <h2>Register</h2>
                 </div>
-            }
-            <motion.nav className={ mobile ? 'active-competition' : (Navbar ? (location.pathname === '/competition' ? "active-competition" : "active") : (location.pathname === '/competition' ? "nav-competition" : ""))}
+            } */}
+            {!mobile && <motion.nav className={ mobile ? 'active-competition' : (Navbar ? (location.pathname === '/competition' ? "active-competition" : "active") : (location.pathname === '/competition' ? "nav-competition" : ""))}
                 initial={{
                     y:-1000,
                 }}
@@ -86,10 +86,7 @@ const Navbar = ({location}) => {
                         <li classname="register"><a href="">Register Now</a></li>
                     </ul>
                 </div>
-                {mobile && <Link to='/'>
-                <img className="mobile" src="logo.png" alt="logo"/>  
-                </Link>}  
-            </motion.nav>
+            </motion.nav>}
         </div>
     )
 }

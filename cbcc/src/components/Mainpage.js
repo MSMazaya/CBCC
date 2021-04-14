@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Header from "./mainpage/Header"
 import Events from "./mainpage/Events"
 import Timeline from "./mainpage/Timeline"
@@ -7,7 +7,21 @@ import Faq from "./mainpage/Faq"
 import Sponsor from "./mainpage/Sponsor"
 import Mediapartner from './mainpage/Mediapartner'
 import {motion} from 'framer-motion'
+
+
 const Mainpage = () => {
+    const [respond, setRespond] = useState(true)
+    window.addEventListener('resize',()=>{
+        var w = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+        if (w<1000){
+            setRespond(false)
+        } else{
+            setRespond(true)
+        }
+    });
     return (
         <motion.div
         exit={{opacity:0}}
@@ -17,7 +31,7 @@ const Mainpage = () => {
         >
             <Header/>
             <Subheader/>
-            <Events/>
+            {respond && <Events/>}
             <Timeline/>
             <Faq/>
             <Sponsor/>

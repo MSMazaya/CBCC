@@ -580,14 +580,6 @@ header{
 }
 
 
-.line{
-  margin-top: 35px;
-  width: 0.75em;
-  background-color: #4A415F;
-  height: 119vh;
-  border-radius: 10px;
-}
-
 .timeline-container{
   display: flex;
   flex-direction: column;
@@ -598,12 +590,24 @@ header{
 
 
 .tl{
-  position: relative;
+  
+  position: absolute;
   top: -0.75rem;
   width: 3rem;
   height: 3rem;
   background: #FECC50;
+  z-index: 2;
 }
+
+.line{
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+  height: 135%;
+  background-color: #4A415F;
+  min-width: 1rem;
+}
+
 
 .tl-items{
   position: relative;
@@ -615,6 +619,7 @@ header{
   padding-left: 1rem;
   font-size: 1.5rem;
   position: relative;
+  left: 3rem;
   top: -1.5rem;
 }
 
@@ -654,6 +659,7 @@ header{
   padding-right: 20px;
   width: 55vw;
   height: 63px;
+  min-width: 750px;
 }
 
 .question h1{
@@ -669,9 +675,9 @@ header{
 }
 
 .answer{
-  font-weight: bold;
+  text-align: justify;
+  font-weight: 600;
   padding: 1vw;
-  width: 55vw;
   height: auto;
   border-radius: 3px;
   border: #4A415F solid 3px;
@@ -791,9 +797,9 @@ footer .icons img:Hover{
 
 @media (max-width:360px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
   :root{
-    font-size: 0.5rem;
+    	font-size: 0.7rem;
   }
-  p{
+  .subheader p{
     font-size: 16px;
   }
   .navbar{
@@ -802,7 +808,9 @@ footer .icons img:Hover{
   .mobile{
     display: inline;
   }
-  
+  .tl-gap{
+    height: 1rem;
+  }
 .nav-mobile{
   padding-top: 30%;
   display: flex;
@@ -913,11 +921,6 @@ footer .icons img:Hover{
   .tl-wraper{
     flex-direction: column;
   }
-  .line{
-    left: 49%;
-    width: 7px;
-    height: 80vh;
-  }
   .timeline-container{
     flex-direction: column;
     justify-content: space-between;
@@ -931,35 +934,64 @@ footer .icons img:Hover{
     margin-bottom: 100px;
   }
 }
-@media (max-width:480px)  { 
+@media (max-width:550px)  { 
+  .faq{
+    align-items: center;
+  }
   .cover{
     display: none;
   }
-  .wrapper{
-    width: 90%;
+  .question{ 
+    padding-left: 30px !important;
+    min-width: 90vw !important;
   }
-  .question{
-    width: 100%;
+  .question h1{
+    font-size: 1.25rem !important;
   }
   .answer{
-    width: 100%;
-    height: auto;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1rem !important;
+    min-width: 90vw !important;
+    width: 55vw;
   }
   
 }
-@media (max-width:600px)  {
-   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:650px) {
+  .wrapper h1{
+    font-size: smaller;
+  }
+}
+@media (max-width:700px)  {
   .logo-sponsor{
     flex-direction: column;
   }
+  .question{ 
+    min-width: 500px ;
   }
+  .answer{
+    min-width: 500px ;
+  }
+}
 @media (max-width:801px)  {
   /* tablet, landscape iPad, lo-res laptops ands desktops */ 
   .grid-container{
     grid-template-columns: auto;
   }
+  .question{ 
+    min-width: 600px ;
+  }
+  .answer{
+    min-width: 600px ;
+  }
 }
-@media (max-width:1025px) {
+@media (max-width:950px) {
+  body{
+    font-size: 0.8rem; 
+  }
+}
+@media (max-width:1100px) {
+
   .headline ul{
     margin-left: 0px;
     gap: 20px;
@@ -974,7 +1006,7 @@ footer .icons img:Hover{
     height: 110vh;
   }
   .subheader h1{
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
     font-weight: 600;
   }

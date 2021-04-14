@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 import {motion, AnimatePresence} from 'framer-motion'
 
 const tl_content_pre = [
-    {date:"5 Februari", place:"Live IG I",title:"“Introduction of Collegacy Bandung and CBCC“"},
+    {date:"5 Februari 2021", place:"Live IG I",title:"“Introduction of Collegacy Bandung and CBCC“"},
     {date:"20 Februari 2021", place:"Live IG II",title:"Live IG Sharing about “Break Your Limit”"},
     {date:"3 April 2021", place:"Instagram TakeOver",title:"““How to Build Personal Branding in the Digital Era”"},
-    {date:"17 April 2021", place:"CBCC ClubHouse I",title:"“Outstanding Students 101: How to Become the Next Outstanding Student”"},
+    {date:"17 April 2021", place:"CBCC ClubHouse I",title:"“How to Become the Next Outstanding Student”"},
     {date:"2 Mei 2021", place:"CBCC ClubHouse II",title:"“TBA“"},
 ]
 
@@ -29,21 +29,22 @@ const Timeline = () => {
                 <a whileHover={()=>{}} className={timelineTypes ? "picked" : ""} onClick={()=>setTimelineTypes(true)}>Pre-Event</a>
                 <a className={timelineTypes ? "" : "picked"} onClick={()=>setTimelineTypes(false)}>Business Case Competition</a>
             </div>
-            <div className="gap"></div>
+            <div className="tl-gap"></div>
             <div className='tl-wrapper'>
                 <AnimatePresence>
-                <div className="line" style={{height:(timelineTypes ? "119vh" : "130vh")}}></div>
+                {/* <div className="line" style={{height:(timelineTypes ? "119vh" : "130vh")}}></div> */}
                 {timelineTypes ? 
                 <motion.div 
                 intial={{y:0,opacity:1}}
                 exit={{y:10,opacity:0}}
                 className="timeline-container"> 
                 {tl_content_pre.map(
-                    (x)=>{
+                    (x,index)=>{
                     return <div className="tl-items">
                             <div className="circle tl"></div>
+                            <div className="line" style={{backgroundColor:(index === tl_content_pre.length-1 && "transparent")}}></div>
                             <div className="inside-tl-items">
-                                <h2 className="tl-date">{x.date}</h2>
+                                <h3 className="tl-date">{x.date}</h3>
                                 <h3>{x.place}</h3>
                                 <span>{x.title}</span>
                             </div>
@@ -61,6 +62,7 @@ const Timeline = () => {
                     return (
                         <div className="tl-items">
                             <div className="circle tl"></div>
+                            <div className="line" style={{backgroundColor:(index === tl_content_bisnis.length-1 && "transparent")}}></div>
                             <div className="inside-tl-items">
                                 <h4>{x.title}</h4>
                                 <span>{x.date}</span>
