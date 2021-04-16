@@ -1137,16 +1137,16 @@ footer .icons img:Hover{
 }
 @media (max-width:608px){
   .mediapartner{
-    height:120vh;
+    height:150vh;
   }
   .logo-medpart{
     width:60%;
     gap:10px;
   }
 }
-@media (max-width:558px){
+@media (max-width:581px){
   .mediapartner{
-    height:180vh;
+    height:190vh;
   }
 }
 @media (max-width:414px){

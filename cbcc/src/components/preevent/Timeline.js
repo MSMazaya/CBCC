@@ -83,8 +83,11 @@ const Timeline = () => {
             </div>
             <Subheader nama={timelineGroup[group].nama} posisi={timelineGroup[group].posisi} judul={timelineGroup[group].judul} deskripsi={timelineGroup[group].deskripsi} gambar={timelineGroup[group].gambar} />
         </div>
+        
     )
 }
+
+
 
 
 export default Timeline
