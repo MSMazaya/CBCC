@@ -110,7 +110,13 @@ sama tambah class buat positioningnya
 
 .circle{
   border-radius: 50%;
+  box-shadow: 0px 0px 2px grey;
 }
+
+.circle:hover{
+  box-shadow: 0px 0px 10px #FECC50;
+}
+
 
 .pointer {
   width: 200px;
@@ -148,13 +154,13 @@ sama tambah class buat positioningnya
 }
 
 
-
+/*
 .x1{
-  position: absolute;
+  position: flex;
   width: 192.5px;
   height: 303.48px;
-  right: 24px;
-  top: 1550px;
+  right: 0px;
+  top: 1560px;
   font-family: "Nunito";
   font-style: normal;
   font-weight: bold;
@@ -182,7 +188,7 @@ sama tambah class buat positioningnya
 
   transform: rotate(9.88deg);
 }
-
+*/
 .btn{
   width: 140px;
   height: 50px;
@@ -724,6 +730,140 @@ header{
   gap: 10px;
   align-items: center;
   justify-content: center;
+}
+
+.logo-medpart{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.aiesec-medpart{
+  width: 165px;
+  height: 23.6px; 
+}
+
+.radiomu-medpart{
+  width: 168.4px;
+  height: 55px;
+}
+
+.bnec-medpart{
+  width: 150px;
+  height: 53.25px;
+}
+
+.eventpelajar-medpart{
+  width: 160.005px;
+  height: 37.5px;
+}
+
+.zonalomba-medpart{
+  width: 132.8175px;
+  height: 48.12px;
+}
+
+.ceds-medpart{
+  width: 78.2775px;
+  height: 81.585px;
+}
+
+.uiac-medpart{
+  width: 152.28px;
+  height: 72.72px;
+}
+
+.aiesecunpad-medpart{
+  width: 170px;
+  height: 49.13px; 
+}
+
+.share-medpart{
+  width: 122.88px;
+  height: 98.28px; 
+}
+
+.cintap-medpart{
+  width: 108px;
+  height: 63.4px; 
+}
+
+.echo-medpart{
+  width: 91.35px;
+  height: 71.19px; 
+}
+
+.gudanglomba-medpart{
+  width: 80px;
+  height: 80px; 
+}
+
+.infolomba-medpart{
+  width: 89.5px;
+  height: 126.9px; 
+}
+
+.bncc-medpart{
+  width: 145.808px;
+  height: 42.464px; 
+}
+
+.bemuns-medpart{
+  width: 120px;
+  height: 120px; 
+}
+
+.bemugm-medpart{
+  width: 117.5px;
+  height: 90.8px; 
+}
+
+.bemsb-medpart{
+  width: 100px;
+  height: 100px; 
+}
+
+.bemunud-medpart{
+  width: 107.2px;
+  height: 112px; 
+}
+
+.bemunj-medpart{
+  width: 128.004px;
+  height: 65.46px; 
+}
+
+.radiobl-medpart{
+  width: 80px;
+  height: 80px; 
+}
+
+.imk-medpart{
+  width: 80px;
+  height: 80px; 
+}
+
+.himaekis-medpart{
+  width: 80px;
+  height: 80px; 
+}
+
+.himaunud-medpart{
+  width: 80px;
+  height: 80px; 
+}
+
+.himafikom-medpart{
+  width: 80px;
+  height: 80px; 
+}
+
+.bcm-medpart{
+  width: 100px;
+  height: 100px; 
 }
 
 /* Footer */
