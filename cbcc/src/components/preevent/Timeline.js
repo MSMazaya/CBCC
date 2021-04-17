@@ -46,7 +46,7 @@ const Timeline = () => {
             <div className='flex-row pointer-wrapper'>
                 <div onClick={()=>setGroup(0)} className="pointer">
                     <div className="temlen">
-                    <a className="tanggal" style={{left:"30px"}}>5 Februari 2021</a>
+                    <a className="tanggal" style={{left:"30px"}} >5 Februari 2021</a>
                     <a className="lipe">Live IG 1</a>
                     <a className="jdl">“Introduction of Collegacy Bandung and CBCC”</a>
                     </div>
