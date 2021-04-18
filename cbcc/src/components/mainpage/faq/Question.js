@@ -11,6 +11,7 @@ const Question = ({question,answer}) => {
     const controlinitial = useAnimation();
     const controlanimate = useAnimation();
     const ref = useRef(null)
+    const answerParagraph = answer.split(' ')
     return (
         <div>
             <div className="question-wrapper"
@@ -45,8 +46,7 @@ const Question = ({question,answer}) => {
                             exit={{y:-50,opacity:0}}
                             transition={{duration:.5}}
                             className="answer">
-                                <p>{answer}</p>
-                            </motion.div>
+                                {answer.split("[enter]").map(x=><p>{x}</p>)}</motion.div>
                     }
                     </AnimatePresence>
                     
