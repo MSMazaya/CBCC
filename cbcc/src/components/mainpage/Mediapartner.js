@@ -36,6 +36,9 @@ const Mediapartner = () => {
                 <img className="himaunud-medpart" src="HIMA AK UNUD.jpg" alt="himaunud"/>
                 <img className="himafikom-medpart" src="LOGO HIMA HUMAS.png" alt="himafikom"/>
                 <img className="bcm-medpart" src="Logo Bdg Creative Media.jpg" alt="bcm"/>
+                <img className="him-medpart" src="Logo HIM dept. Ilmu Pemerintahan UNDIP.png" alt="him"/>
+                <img className="gsis-medpart" src="GSIS.png" alt="gsis"/>
+                <img className="bemfisip-medpart" src="Logo BEM FISIP UNS.png" alt="bemfisip"/>
             </div>
         </div>
     )
