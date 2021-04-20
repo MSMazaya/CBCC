@@ -80,8 +80,17 @@ const Timeline = () => {
                     gap:"30px",
                     marginTop:"100px"
                 }}
-            >
-                <motion.div
+            > 
+            </div>
+        </div>
+        
+    )
+}
+
+
+export default Timeline
+
+/*<motion.div
                             whileHover="hover"
                             variants={{
                                 hover:{
@@ -107,13 +116,4 @@ const Timeline = () => {
                     <h2 style={{
                             color: "white"
                 }}>Register</h2>
-                </div></motion.div>
-            </div>
-        </div>
-        
-    )
-}
-
-
-export default Timeline
-
+                </div></motion.div>*/

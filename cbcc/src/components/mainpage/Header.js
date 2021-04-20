@@ -48,7 +48,7 @@ const Header = () => {
                                     scale:1.1
                                 }
                             }}
-                        ><a className="daftar" href="">Register</a></motion.li>
+                        ><a className="daftar" href="http://bit.ly/PendaftaranCBCC" target="_blank">Register</a></motion.li>
                 </ul>
                 </div>
             </motion.div>

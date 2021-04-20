@@ -1229,6 +1229,17 @@ footer .icons img:Hover{
     display: none;
   }
 }
+@media (max-width:1340px){
+.line{
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+  height: 190%;
+  background-color: #4A415F;
+  min-width: 1rem;
+}
+
+}
 @media (min-width:1281px) { /* hi-res laptops and desktops */  }
 
 
