@@ -3,7 +3,6 @@ import Header from './competition/Header'
 import {motion} from 'framer-motion'
 import Subheader from './competition/Subheader'
 import Timeline from './competition/Timeline'
-import Faq from './competition/Faq'
 const Competition = () => {
     return (
         <motion.div
@@ -14,7 +13,7 @@ const Competition = () => {
             <Header/>
             <Subheader/>
             <Timeline/>
-            <Faq/>
+            <div className="gap-compe"></div>
         </motion.div>
     )
 }
