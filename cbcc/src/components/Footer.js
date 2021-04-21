@@ -5,7 +5,7 @@ const link ={
     line:"https://page.line.me/725fevya",
     instagram:"https://www.instagram.com/collegacy.bcc/",
     linkedin:"https://www.linkedin.com/company/collegacy-business-case-competition",
-    email:"mailto:participants.collegacybcc@gmail.com",
+    email:"mailto:delegatesrelations.cbcc@gmail.com",
 }
 
 const Footer = () => {
@@ -34,8 +34,8 @@ const Footer = () => {
                     <a className="linked" href="https://www.linkedin.com/company/collegacy-business-case-competition" target="_blank">Collegacy&nbsp;Business&nbsp;Case&nbsp;Competition</a>
                 </div>
                 <div className="wrap-sosmed">
-                    <img onClick={()=>setClicked({jenis:"email",status:true})} className="icon email" src="email.png" alt="email" href="mailto:participants.collegacybcc@gmail.com" target="_blank"/>
-                    <a className="emaila" href="mailto:participants.collegacybcc@gmail.com" target="_blank">participants.collegacybcc@gmail.com</a>
+                    <img onClick={()=>setClicked({jenis:"email",status:true})} className="icon email" src="email.png" alt="email" href="mailto:delegatesrelations.cbcc@gmail.com" target="_blank"/>
+                    <a className="emaila" href="mailto:delegatesrelations.cbcc@gmail.com" target="_blank">delegatesrelations.cbcc@gmail.com</a>
                 </div>
             </div>
         </footer>

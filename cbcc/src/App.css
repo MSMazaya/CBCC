@@ -125,10 +125,11 @@ sama tambah class buat positioningnya
   background: linear-gradient(90deg, #4A415F 0%, rgba(74, 65, 95, 0) 272.61%);
 }
 
+/*
 .pointer:hover{
   cursor: pointer;
 }
-
+*/
 .pointer:after {
   content: "";
   position: absolute;
@@ -879,6 +880,10 @@ header{
 .bemfisip-medpart{
   width: 100.8px;
   height:99px;
+}
+.founderlab-medpart{
+  width: 120px;
+  height:120px;
 }
 
 /* Footer */

@@ -3,7 +3,7 @@ import React from 'react'
 const Mediapartner = () => {
     return (
         <div className="mediapartner">
-            <h1 className="sub-title">Media Partners</h1>
+            <h1 className="sub-title">Our Partners</h1>
             <div className="logo-medpart">
                 <img className="aiesec-medpart" src="Aiesec UNAND.png" alt="aiesec"/>
                 <img className='radiomu-medpart' src="Radio MU.png" alt="radiomu"/>
@@ -39,6 +39,7 @@ const Mediapartner = () => {
                 <img className="him-medpart" src="Logo HIM dept. Ilmu Pemerintahan UNDIP.png" alt="him"/>
                 <img className="gsis-medpart" src="GSIS.png" alt="gsis"/>
                 <img className="bemfisip-medpart" src="Logo BEM FISIP UNS.png" alt="bemfisip"/>
+                <img className="founderlab-medpart" src="founderlab.png" alt="founderlab"/>
             </div>
         </div>
     )

@@ -30,14 +30,6 @@
     gap: 50px;
 }
 
-.preevent-timeline a{
-    cursor: pointer;
-}
-  
-.preevent-timeline a.picked:after{
-width: 100%; 
-left: 0; 
-}
 
 .subheader.compe{
     height: 120vh;

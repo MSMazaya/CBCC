@@ -46,7 +46,7 @@ const Header = () => {
                 onClick={()=>scroll(705)}>Timeline</motion.a>
             </div>
             <div className="description" style={{zIndex: "950"}}>
-                <p>Pre-event sebagai acara pembuka dari Collegacy Business Case Competition (CBCC) 2021, Panitia CBCC mempersembahkan rangkaian acara Pre Event yang menarik dengan menghadirkan generasi muda inspiratif untuk berbagi wawasan seputar lika-liku dunia bisnis, perkembangan teknologi, dan topik menarik lainnya kepada mahasiswa Indonesia dimanapun berada.</p>
+                <p>Pre-event sebagai acara pembuka dari Collegacy Business Case Competition 2021, mempersembahkan rangkaian acara yang menarik dengan menghadirkan generasi muda inspiratif untuk berbagi wawasan seputar lika-liku dunia bisnis, perkembangan teknologi, dan topik menarik lainnya kepada mahasiswa Indonesia di mana pun berada.</p>
             </div>
         </motion.div>
     )
