@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Subheader from './Subheader'
 
 const timelineGroup = [
@@ -41,42 +41,50 @@ const timelineGroup = [
 const Timeline = () => {
     const [group, setGroup] = useState(0)
     const [timelineTypes, setTimelineTypes] = useState(true)
+    const [check, setCheck] = useState([])
+    useEffect(() => {
+        let temp = []
+        for(let i=0;i<timelineGroup.length+1;i++){
+            temp.push((group === i ? true : false))
+        }
+        setCheck(temp)
+        console.log(check)
+    }, [group])
     return (
         <div className="preevent-timeline flex-col">
             <h1 className="sub-title" style={{marginBottom:"80px"}}>Timeline</h1>
             <div className='flex-row pointer-wrapper'>
                 <div  className="pointer">
                     <div className="temlen">
-                    <a className="tanggal" onClick={()=>setGroup(0)} style={{left:"40px"}} >5 Februari 2021</a>
+                    <a className={`tanggal ${check[0] ? "active" : ""}`} onClick={()=>setGroup(0)} style={{left:"40px"}} >5 Februari 2021</a>
                     <a className="lipe">Live IG 1</a>
                     <a className="jdl">“Introduction of Collegacy Bandung and CBCC”</a>
                     </div>
-                    
                 </div>
                 <div className="pointer">
                 <div className="temlen">
-                    <a className="tanggal" onClick={()=>setGroup(1)} style={{left:"30px"}}>20 Februari 2021</a>
+                    <a className={`tanggal ${check[1] ? "active" : ""}`} onClick={()=>setGroup(1)} style={{left:"30px"}}>20 Februari 2021</a>
                     <a className="lipe2"style={{left:"65px"}}>Live IG 2</a>
                     <a className="jdl2"style={{left:"-40px"}}>“Break Your Limit ”</a>
                     </div>
                 </div>
                 <div className="pointer">
                 <div className="temlen">
-                    <a className="tanggal" onClick={()=>setGroup(2)} style={{left:"50px"}}>3 April 2021</a>
+                    <a className={`tanggal ${check[2] ? "active" : ""}`} onClick={()=>setGroup(2)} style={{left:"50px"}}>3 April 2021</a>
                     <a className="lipe"style={{lineHeight:"30px",top:"50px",width:"300px",left:"0px"}}>Instagram TakeOver</a>
                     <a className="jdl">How to Build Personal Branding in the Digital Era</a>
                     </div>
                 </div>
                 <div className="pointer">
                 <div className="temlen">
-                    <a className="tanggal" onClick={()=>setGroup(3)} style={{left:"45px"}}>17 April 2021</a>
+                    <a className={`tanggal ${check[3] ? "active" : ""}`} onClick={()=>setGroup(3)} style={{left:"45px"}}>17 April 2021</a>
                     <a className="lipe2"style={{width:"300px",left:"55px"}}>ClubHouse I</a>
                     <a className="jdl2"style={{top:"-70px",width:"400px",left:"-90px",fontSize:"18px",lineHeight:"15px"}}>Outstanding Students 101: How to Become the Next Outstanding Student</a>
                     </div>
                 </div>
                 <div className="pointer">
                 <div className="temlen">
-                    <a className="tanggal" onClick={()=>setGroup(4)} style={{left:"55px"}}>2 Mei 2021</a>
+                    <a className={`tanggal ${check[4] ? "active" : ""}`} onClick={()=>setGroup(4)} style={{left:"55px"}}>2 Mei 2021</a>
                     <a className="lipe"style={{width:"300px",left:"45px"}}>ClubHouse II</a>
                     <a className="jdl"style={{width:"300px",left:"-45px"}}>To Be Announced</a>
                     </div>
