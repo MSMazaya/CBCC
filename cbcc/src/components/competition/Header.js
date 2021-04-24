@@ -51,7 +51,7 @@ const Header = () => {
                             }}
                         >
                     <div className="btn">
-                        <h2><a style={{color: "white"}} href="http://bit.ly/PendaftaranCBCC" target="_blank">Register </a></h2>
+                        <h2><a style={{color: "white"}} href="https://linktr.ee/collegacy.bcc" target="_blank">Register</a></h2>
                     </div></motion.div>
                 </div>
             </div>

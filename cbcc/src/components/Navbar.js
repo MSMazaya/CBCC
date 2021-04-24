@@ -83,7 +83,7 @@ const Navbar = ({location}) => {
                         <a onClick={()=>scroll(705)}>Events</a>
                     }
                             </li>
-                        <li classname="register"><a href="http://bit.ly/PendaftaranCBCC" target="_blank">Register Now</a></li>
+                        <li classname="register"><a href="https://linktr.ee/collegacy.bcc" target="_blank">Register Now</a></li>
                     </ul>
                 </div>
             </motion.nav>}
