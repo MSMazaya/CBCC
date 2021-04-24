@@ -17,11 +17,11 @@ const timelineGroup = [
         gambar:"Tareq.jpg"
     },
     {
-        nama:"Secret Speaker",
-        posisi: "Coming soon",
-        judul:"“How to Build Personal Branding in the Digital Era 1”",
+        nama:"Nabila Ishma",
+        posisi: "Founder metamorfosa_ind",
+        judul:"“How to Build Personal Branding in the Digital Era”",
         deskripsi:"Personal branding adalah salah satu kunci kesuksesan seseorang. Menyadari akan pentingnya personal branding baik di dunia kampus maupun kerja, kami mempersembahkan Instagram TakeOver yang akan mengupas seputar personal branding dari pembicara yang inspiratif dan berpengalaman.",
-        gambar:"cs.png"
+        gambar:"Nabila.png"
     },
     {
         nama:"To Be Announced",
@@ -65,7 +65,7 @@ const Timeline = () => {
                 <div className="temlen">
                     <a className={`tanggal ${check[1] ? "active" : ""}`} onClick={()=>setGroup(1)} style={{left:"30px"}}>20 Februari 2021</a>
                     <a className="lipe2"style={{left:"65px"}}>Live IG 2</a>
-                    <a className="jdl2"style={{left:"-40px"}}>“Break Your Limit ”</a>
+                    <a className="jdl2"style={{left:"-40px"}}>“Break Your Limit”</a>
                     </div>
                 </div>
                 <div className="pointer">

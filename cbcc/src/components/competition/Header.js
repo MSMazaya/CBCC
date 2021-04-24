@@ -40,7 +40,7 @@ const Header = () => {
                             }}
                         >
                     <div className="btn"> 
-                        <h2 style={{color: "white"}}>Guidelines</h2>
+                    <h2><a style={{color: "white"}} href="https://linktr.ee/collegacy.bcc" target="_blank">Guidelines</a></h2>
                     </div></motion.div>
                     <motion.div
                             whileHover="hover"

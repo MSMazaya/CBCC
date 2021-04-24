@@ -42,7 +42,7 @@ const Timeline = () => {
                     (x,index)=>{
                     return <div className="tl-items">
                             <div className="circle tl"></div>
-                            <div className="line" style={{backgroundColor:(index === tl_content_pre.length-1 && "transparent")}}></div>
+                            <div className="line" style={{backgroundColor:(index === tl_content_pre.length-1 && "transparent"), height:"142%"}}></div>
                             <div className="inside-tl-items">
                                 <h3 className="tl-date">{x.date}</h3>
                                 <h3>{x.place}</h3>
@@ -62,7 +62,7 @@ const Timeline = () => {
                     return (
                         <div className="tl-items">
                             <div className="circle tl"></div>
-                            <div className="line" style={{backgroundColor:(index === tl_content_bisnis.length-1 && "transparent")}}></div>
+                            <div className="line" style={{backgroundColor:(index === tl_content_bisnis.length-1 && "transparent"), height:"172%"}}></div>
                             <div className="inside-tl-items">
                                 <h4>{x.title}</h4>
                                 <span>{x.date}</span>

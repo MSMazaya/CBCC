@@ -5,9 +5,9 @@ const tl_content_pre = [
     {date:"25-30 April 2021", title:"Open Early Bird Registration"},
     {date:"1-15 Mei 2021", title:"Open Normal Registration"},
     {date:"19 Mei 2021", title:"Case Distribution"},
-    {date:"22 Mei", title:"”Workshop “How to Design Your Way of Thinking”"},
+    {date:"22 Mei", title:"Workshop “How to Design Your Way of Thinking”"},
     {date:"19-31 Mei 2021", title:"Essay Submission"},
-    {date:"11 Juni 2021", title:"“Top 60 Semifinalist Announcement“"},
+    {date:"11 Juni 2021", title:"Top 60 Semifinalist Announcement"},
 ]
 
 const tl_content_bisnis = [
