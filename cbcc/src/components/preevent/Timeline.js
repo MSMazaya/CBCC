@@ -84,7 +84,7 @@ const Timeline = () => {
                 </div>
                 <div className="pointer">
                 <div className="temlen">
-                    <a className={`tanggal ${check[4] ? "active" : ""}`} onClick={()=>setGroup(4)} style={{left:"40px"}}>Coming Soon</a>
+                    <a className={`tanggal ${check[4] ? "active" : ""}`} onClick={()=>setGroup(4)} style={{left:"50px"}}>16 Mei 2021</a>
                     <a className="lipe"style={{width:"300px",left:"45px"}}>ClubHouse II</a>
                     <a className="jdl"style={{width:"300px",left:"-45px"}}>To Be Announced</a>
                     </div>

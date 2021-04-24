@@ -6,7 +6,7 @@ const tl_content_pre = [
     {date:"20 Februari 2021", place:"Live IG II",title:"Live IG Sharing about “Break Your Limit”"},
     {date:"3 April 2021", place:"Instagram TakeOver",title:"““How to Build Personal Branding in the Digital Era”"},
     {date:"17 April 2021", place:"CBCC ClubHouse I",title:"“How to Become the Next Outstanding Student”"},
-    {date:"2 Mei 2021", place:"CBCC ClubHouse II",title:"“TBA“"},
+    {date:"16 Mei 2021", place:"CBCC ClubHouse II",title:"“TBA“"},
 ]
 
 const tl_content_bisnis = [
